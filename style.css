@@ -1,3 +1,16 @@
+/*
+ * style.css — COMMON styles shared by all companion websites.
+ *
+ * Platform-specific rules live in separate files and must be loaded AFTER this one:
+ *   iOS / iPadOS apps:  styles/shared/style-ios.css
+ *   macOS apps:         styles/shared/style-macos.css
+ *
+ * Example:
+ *   <link rel="stylesheet" href="styles/theme.css">
+ *   <link rel="stylesheet" href="styles/shared/style.css">
+ *   <link rel="stylesheet" href="styles/shared/style-ios.css">
+ */
+
 /* --- 1. Base Styles --- */
 * {
     margin: 0;
@@ -150,50 +163,7 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* --- 5. Hero Visuals --- */
-.hero-visual-double {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 20px 0 40px 0;
-    perspective: 1000px;
-}
-
-.screenshot-wrapper {
-    max-width: 260px;
-    transition: transform 0.5s ease;
-}
-
-.screenshot-wrapper.primary {
-    transform: rotate(-2deg) translateX(20px);
-    z-index: 2;
-}
-
-.screenshot-wrapper.secondary {
-    transform: rotate(2deg) translateX(-20px);
-    z-index: 1;
-}
-
-.hero-visual-double:hover .screenshot-wrapper {
-    transform: rotate(0deg) translateX(0);
-}
-
-.app-screenshot {
-    width: 100%;
-    height: auto;
-    border-radius: 34px;
-    transition: transform 0.5s ease;
-    border: 1px solid var(--screenshot-border);
-    box-shadow: var(--screenshot-shadow);
-}
-
-.app-screenshot.dark {
-    --bezel-color: #333333;
-    border-color: #000000;
-}
-
-/* --- 6. Feature Blocks --- */
+/* --- 5. Feature Block Headers (shared) --- */
 .feature-header {
     text-align: left;
     margin-bottom: 2.5rem;
@@ -202,36 +172,6 @@ li {
 .feature-header p {
     font-size: 1.1rem;
     color: var(--text-tertiary);
-}
-
-.feature-split {
-    display: flex;
-    align-items: flex-start;
-    gap: 4rem;
-}
-
-.feature-split.reverse {
-    flex-direction: row-reverse;
-}
-
-.feature-text {
-    flex: 1.2;
-    padding-bottom: 0rem;
-}
-
-.feature-image {
-    flex: 0.8;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 120px;
-    align-self: flex-start;
-    margin-bottom: 2rem;
-}
-
-.feature-image .app-screenshot {
-    max-width: 240px;
-    transform: none !important;
 }
 
 /* --- 7. Privacy & Trust Statements --- */
@@ -510,13 +450,9 @@ footer {
     margin-bottom: 0;
 }
 
-/* --- 11. Responsive --- */
+/* --- 11. Responsive (common) --- */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
-    .hero-visual-double { flex-direction: column; gap: 40px; }
-    .screenshot-wrapper.secondary { display: none; }
-    .feature-split, .feature-split.reverse { flex-direction: column; gap: 2rem; }
-    .feature-image { position: static; justify-content: center; }
 
     .footer-content {
         justify-content: flex-start;

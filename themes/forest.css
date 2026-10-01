@@ -1,0 +1,58 @@
+/* Forest — Dark Theme */
+:root {
+    /* Backgrounds */
+    --bg-primary: #0f1f15;
+    --bg-secondary: #152b1e;
+    --bg-tertiary: #1c3828;
+
+    /* Text Colors */
+    --text-primary: #e2ede6;
+    --text-secondary: #c4d9cb;
+    --text-tertiary: #8aab96;
+    --text-subtitle: #8aab96;
+    --text-strong: #e2ede6;
+
+    /* Heading Colors */
+    --heading-primary: #f0faf3;
+    --heading-secondary: #d4eddb;
+
+    /* Accent Colors */
+    --accent-primary: #4ade80;
+    --accent-secondary: #166534;
+
+    /* Borders */
+    --border-primary: #1c3828;
+    --border-secondary: #2d5a3d;
+
+    /* Links */
+    --link-color: #4ade80;
+
+    /* Header */
+    --header-bg: rgba(21, 43, 30, 0.95);
+    --header-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    /* Icons */
+    --icon-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+    /* Screenshots */
+    --screenshot-border: rgba(255, 255, 255, 0.1);
+    --screenshot-shadow:
+        0 0 0 8px #2d5a3d,
+        0 20px 50px rgba(0, 0, 0, 0.9),
+        0 0 20px rgba(74, 222, 128, 0.06);
+
+    /* Boxes (trust statement, contact box, etc.) */
+    --box-bg: #152b1e;
+    --box-border: #2d5a3d;
+
+    /* CTA (Download buttons) */
+    --cta-bg: #1c3828;
+    --cta-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    --cta-border: transparent;
+
+    /* Footer */
+    --footer-bg: #152b1e;
+    --footer-link: #c4d9cb;
+    --footer-link-hover: #4ade80;
+    --footer-link-active: #4ade80;
+}
