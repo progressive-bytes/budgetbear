@@ -1,0 +1,58 @@
+/* Light Theme Colors */
+:root {
+    /* Backgrounds */
+    --bg-primary: #dae8f5;
+    --bg-secondary: #cce0f2;
+    --bg-tertiary: #bbdefb;
+    
+    /* Text Colors */
+    --text-primary: #1a202c;
+    --text-secondary: #2d3748;
+    --text-tertiary: #4a5568;
+    --text-subtitle: #718096;
+    --text-strong: #1a202c;
+    
+    /* Heading Colors */
+    --heading-primary: #1976d2;
+    --heading-secondary: #1565c0;
+    
+    /* Accent Colors */
+    --accent-primary: #2196f3;
+    --accent-secondary: #64b5f6;
+    
+    /* Borders */
+    --border-primary: #bbdefb;
+    --border-secondary: #90caf9;
+    
+    /* Links */
+    --link-color: #1976d2;
+    
+    /* Header */
+    --header-bg: rgba(166, 212, 250, 0.95);
+    --header-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    
+    /* Icons */
+    --icon-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+    
+    /* Screenshots */
+    --screenshot-border: rgba(33, 150, 243, 0.15);
+    --screenshot-shadow: 
+        0 0 0 8px #ffffff, 
+        0 20px 50px rgba(0, 0, 0, 0.12),
+        0 0 20px rgba(33, 150, 243, 0.08);
+    
+    /* Boxes (trust statement, contact box, etc.) */
+    --box-bg: #d1e7f8;
+    --box-border: #90caf9;
+    
+    /* CTA (Download buttons) */
+    --cta-bg: #bbdefb;
+    --cta-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+    --cta-border: #90caf9;
+    
+    /* Footer */
+    --footer-bg: #a6d4fa;
+    --footer-link: #1a202c;
+    --footer-link-hover: #1976d2;
+    --footer-link-active: #1976d2;
+}
