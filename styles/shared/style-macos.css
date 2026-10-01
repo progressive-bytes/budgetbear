@@ -1,0 +1,98 @@
+/*
+ * style-macos.css — macOS companion website styles.
+ * Load AFTER styles/shared/style.css.
+ *
+ * Built for wide macOS window screenshots (exported as WebP with transparent,
+ * rounded corners). No device bezels: the shadow follows the window outline
+ * via filter: drop-shadow(), and the theme variables are reused as-is.
+ *
+ * Optional per-theme overrides (all have fallbacks defined below):
+ *   --window-shadow   a filter value, e.g. drop-shadow(...) drop-shadow(...)
+ */
+
+:root {
+    --window-shadow:
+        drop-shadow(0 0 1px var(--screenshot-border, rgba(0, 0, 0, 0.25)))
+        drop-shadow(0 18px 32px rgba(0, 0, 0, 0.22));
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --window-shadow:
+            drop-shadow(0 0 1px var(--screenshot-border, rgba(255, 255, 255, 0.15)))
+            drop-shadow(0 20px 40px rgba(0, 0, 0, 0.7));
+    }
+}
+
+/* --- macOS 1. Window screenshots --- */
+.window-shot {
+    margin: 0;
+}
+
+.window-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: var(--window-shadow);
+}
+
+/* --- macOS 2. Hero (one wide window) --- */
+.hero-visual-single {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+}
+
+.hero-visual-single .window-shot {
+    width: 100%;
+    max-width: 840px;
+}
+
+/* --- macOS 3. Feature blocks --- */
+
+/* Text first, wide window below */
+.feature-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-stack .feature-text {
+    flex: none;
+}
+
+.feature-stack .feature-text h3:first-child {
+    margin-top: 0;
+}
+
+.feature-stack .window-shot {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Text beside a window with a roughly square shape (e.g. setup instructions) */
+.feature-split-macos {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.feature-split-macos.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-split-macos .feature-text {
+    flex: 1;
+}
+
+.feature-split-macos .window-shot {
+    flex: 1.1;
+    min-width: 0;
+}
+
+/* --- macOS 4. Responsive --- */
+@media (max-width: 768px) {
+    .hero-visual-single { padding-bottom: 24px; }
+    .feature-split-macos,
+    .feature-split-macos.reverse { flex-direction: column; align-items: stretch; gap: 2rem; }
+}

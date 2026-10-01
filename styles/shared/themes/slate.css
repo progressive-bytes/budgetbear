@@ -1,0 +1,58 @@
+/* Slate — Light Theme (Comment Reflow) */
+:root {
+    /* Backgrounds */
+    --bg-primary: #e3e7ee;
+    --bg-secondary: #d6dce7;
+    --bg-tertiary: #c8d0de;
+
+    /* Text Colors */
+    --text-primary: #1b2230;
+    --text-secondary: #2f394b;
+    --text-tertiary: #434e62;
+    --text-subtitle: #5b667a;
+    --text-strong: #1b2230;
+
+    /* Heading Colors */
+    --heading-primary: #1f3a68;
+    --heading-secondary: #2a4673;
+
+    /* Accent Colors */
+    --accent-primary: #1b4db0;
+    --accent-secondary: #a9b7d0;
+
+    /* Borders */
+    --border-primary: #d0d7e3;
+    --border-secondary: #aab6ca;
+
+    /* Links */
+    --link-color: #1b4db0;
+
+    /* Header */
+    --header-bg: rgba(190, 200, 217, 0.95);
+    --header-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+
+    /* Icons */
+    --icon-shadow: 0 2px 8px rgba(31, 58, 104, 0.25);
+
+    /* Screenshots */
+    --screenshot-border: rgba(31, 58, 104, 0.2);
+    --screenshot-shadow:
+        0 0 0 8px #f1f4f9,
+        0 20px 50px rgba(20, 30, 55, 0.22),
+        0 0 20px rgba(27, 77, 176, 0.08);
+
+    /* Boxes (trust statement, contact box, etc.) */
+    --box-bg: #d6dce7;
+    --box-border: #b4bfd2;
+
+    /* CTA (Download buttons) */
+    --cta-bg: #c8d0de;
+    --cta-shadow: 0 2px 8px rgba(31, 58, 104, 0.12);
+    --cta-border: #aab6ca;
+
+    /* Footer */
+    --footer-bg: rgb(190, 200, 217);
+    --footer-link: #2f394b;
+    --footer-link-hover: #1b4db0;
+    --footer-link-active: #1b4db0;
+}
