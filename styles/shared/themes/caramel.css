@@ -1,0 +1,58 @@
+/* Caramel — Light Theme */
+:root {
+    /* Backgrounds */
+    --bg-primary: #fdf6ee;
+    --bg-secondary: #f6e8d7;
+    --bg-tertiary: #efdac0;
+
+    /* Text Colors */
+    --text-primary: #3a2f27;
+    --text-secondary: #5c4a3d;
+    --text-tertiary: #8a7360;
+    --text-subtitle: #8a7360;
+    --text-strong: #3a2f27;
+
+    /* Heading Colors */
+    --heading-primary: #b8672b;
+    --heading-secondary: #b8672b;
+
+    /* Accent Colors */
+    --accent-primary: #b8672b;
+    --accent-secondary: #e8c9a3;
+
+    /* Borders */
+    --border-primary: #f0e2d0;
+    --border-secondary: #e0b98a;
+
+    /* Links */
+    --link-color: #b8672b;
+
+    /* Header */
+    --header-bg: rgba(232, 201, 163, 0.95);
+    --header-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    /* Icons */
+    --icon-shadow: 0 2px 8px rgba(184, 103, 43, 0.15);
+
+    /* Screenshots */
+    --screenshot-border: rgba(184, 103, 43, 0.15);
+    --screenshot-shadow:
+        0 0 0 8px #ffffff,
+        0 20px 50px rgba(0, 0, 0, 0.12),
+        0 0 20px rgba(184, 103, 43, 0.08);
+
+    /* Boxes (trust statement, contact box, etc.) */
+    --box-bg: #f6e8d7;
+    --box-border: #e8d3b8;
+
+    /* CTA (Download buttons) */
+    --cta-bg: #efdac0;
+    --cta-shadow: 0 2px 8px rgba(184, 103, 43, 0.1);
+    --cta-border: #e0b98a;
+
+    /* Footer */
+    --footer-bg: rgb(232, 201, 163);
+    --footer-link: #5c4a3d;
+    --footer-link-hover: #b8672b;
+    --footer-link-active: #b8672b;
+}
