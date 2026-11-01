@@ -1,0 +1,8 @@
+{
+  "base_url": "https://www.progressive-bytes.com/budgetbear/",
+  "default_language": "en",
+  "languages": ["en", "de"],
+  "pages": ["index", "contact", "privacy"],
+  "app_store_url": "https://apps.apple.com/app/id6759972859",
+  "redirect_folders": ["gb"]
+}

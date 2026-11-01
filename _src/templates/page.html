@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{{banner}}
+<html lang="{{lang}}">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{description}}">
+        <meta name="keywords" content="{{keywords}}">
+
+        <meta property="og:title" content="{{og_title}}">
+        <meta property="og:description" content="{{og_description}}">
+        <meta property="og:url" content="{{page_url}}">
+        <meta property="og:type" content="website">
+
+        <title>{{title}}</title>
+
+        {{hreflang_links}}
+        <link rel="canonical" href="{{page_url}}">
+
+        <link rel="icon" type="image/svg+xml" href="{{root}}images/favicon.svg">
+        <link rel="shortcut icon" href="{{root}}favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{root}}images/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{root}}styles/theme.css">
+        <link rel="stylesheet" href="{{root}}styles/shared/style.css">
+        <link rel="stylesheet" href="{{root}}styles/shared/style-ios.css">
+
+        {{structured_data}}
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="./" class="logo-link">
+                        <img src="{{root}}images/AppIcon.webp" alt="{{icon_alt}}" class="nav-icon" width="48" height="48">
+                        <div class="brand-text">
+                            <span class="brand-name">BudgetBear</span>
+                            <span class="tagline">{{tagline}}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                {{content}}
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        {{footer_links}}
+                    </div>
+                    <details class="language-selector">
+                        <summary class="language-button">
+                            <span class="current-language">{{current_language}}</span>
+                            <span class="language-arrow">▼</span>
+                        </summary>
+                        <div class="language-menu">
+                            {{language_options}}
+                        </div>
+                    </details>
+                </div>
+                <div class="footer-copyright">
+                    <p>{{copyright}}</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
