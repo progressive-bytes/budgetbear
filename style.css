@@ -111,6 +111,11 @@ main section:last-of-type {
     border-bottom: none;
 }
 
+/* Keep linked sections (e.g. privacy#disclaimer) from hiding under the sticky header */
+section[id] {
+    scroll-margin-top: 5rem;
+}
+
 /* --- 4. Typography --- */
 h1 {
     font-size: 2.75rem;
@@ -161,6 +166,11 @@ ul {
 
 li {
     margin-bottom: 0.5rem;
+}
+
+/* Default colour for plain in-text links (visited included); components below override it where needed */
+a {
+    color: var(--link-color);
 }
 
 /* --- 5. Feature Block Headers (shared) --- */
@@ -280,7 +290,31 @@ section.download-cta {
     transform: scale(1.05);
 }
 
-/* --- 10. Footer --- */
+/* --- 10. Disclaimer Note --- */
+/* Short "provided as is" line; the link to the full disclaimer (see #disclaimer on the privacy page)
+   sits centred on its own line below the text. */
+.disclaimer-note {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-tertiary);
+}
+
+.disclaimer-note a {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.disclaimer-note a:hover {
+    text-decoration: underline;
+}
+
+/* --- 11. Footer --- */
 footer {
     background: var(--footer-bg);
     padding: 1rem 0;
@@ -450,7 +484,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* --- 11. Responsive (common) --- */
+/* --- 12. Responsive (common) --- */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
 
