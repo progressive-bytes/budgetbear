@@ -1,8 +1,28 @@
 {
   "base_url": "https://www.progressive-bytes.com/budgetbear/",
   "default_language": "en",
-  "languages": ["en", "de"],
-  "pages": ["index", "contact", "privacy"],
+  "languages": [
+    "en",
+    "de"
+  ],
+  "pages": [
+    "index",
+    "contact",
+    "privacy"
+  ],
   "app_store_url": "https://apps.apple.com/app/id6759972859",
-  "redirect_folders": ["gb"]
+  "redirect_folders": [
+    "gb"
+  ],
+  "contact": {
+    "organization": "Progressive Bytes",
+    "person": "Nils Anspach",
+    "address": [
+      "c/o Postflex #3191",
+      "Emsdettener Str. 10",
+      "48268 Greven"
+    ],
+    "phone": "+49 2571 5403212",
+    "email": "contact@progressive-bytes.com"
+  }
 }

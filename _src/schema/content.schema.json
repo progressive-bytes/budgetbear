@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BudgetBear website content (one file per language: content/<lang>.json)",
+  "type": "object",
+  "required": ["name", "tagline", "icon_alt", "nav", "copyright", "badge_file", "badge_alt", "currency", "contact", "pages"],
+  "additionalProperties": false,
+  "properties": {
+    "name":       {"$ref": "#/$defs/plain", "description": "Language name in that language, shown in the switcher (e.g. Deutsch)"},
+    "tagline":    {"$ref": "#/$defs/plain", "description": "Short line under the app name in the header"},
+    "icon_alt":   {"$ref": "#/$defs/plain", "description": "Alt text of the app icon"},
+    "nav": {
+      "type": "object",
+      "required": ["home", "privacy", "contact"],
+      "additionalProperties": false,
+      "properties": {
+        "home": {"$ref": "#/$defs/plain"},
+        "privacy": {"$ref": "#/$defs/plain"},
+        "contact": {"$ref": "#/$defs/plain"}
+      }
+    },
+    "copyright":  {"$ref": "#/$defs/plain"},
+    "badge_file": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+\\.svg$", "description": "File in images/badges/"},
+    "badge_alt":  {"$ref": "#/$defs/plain"},
+    "currency":   {"type": "string", "pattern": "^[A-Z]{3}$", "description": "ISO 4217 code for the structured data"},
+    "contact": {
+      "type": "object",
+      "required": ["phone_label", "email_label", "country"],
+      "additionalProperties": false,
+      "properties": {
+        "phone_label": {"$ref": "#/$defs/plain"},
+        "email_label": {"$ref": "#/$defs/plain"},
+        "country": {"$ref": "#/$defs/plain", "description": "Country line of the postal address, in that language"}
+      }
+    },
+    "pages": {
+      "type": "object",
+      "required": ["index", "contact", "privacy"],
+      "additionalProperties": false,
+      "properties": {
+        "index": {"$ref": "#/$defs/page"},
+        "contact": {"$ref": "#/$defs/page"},
+        "privacy": {"$ref": "#/$defs/page"}
+      }
+    }
+  },
+  "$defs": {
+    "plain":  {"type": "string", "minLength": 1, "description": "Plain text, no markup"},
+    "inline": {"type": "string", "minLength": 1, "x-inline": true,
+               "description": "Text with optional **bold**, [link text](https://...) and {site_link}. No HTML, no &amp; entities"},
+    "id":     {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Stable block id, identical in all languages"},
+    "screenshot": {
+      "type": "object",
+      "required": ["name", "alt"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string", "pattern": "^[A-Za-z0-9-]+$", "description": "File name without extension in images/screenshots/<lang>/"},
+        "alt":  {"$ref": "#/$defs/plain"},
+        "dark": {"type": "boolean", "description": "true for a dark-mode screenshot (adds the dark style)"}
+      }
+    },
+    "page": {
+      "type": "object",
+      "required": ["title", "og_title", "description", "og_description", "keywords", "blocks"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"$ref": "#/$defs/plain"},
+        "og_title": {"$ref": "#/$defs/plain"},
+        "description": {"$ref": "#/$defs/plain"},
+        "og_description": {"$ref": "#/$defs/plain"},
+        "keywords": {"$ref": "#/$defs/plain"},
+        "blocks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/block"}}
+      }
+    },
+    "block": {
+      "oneOf": [
+        {"$ref": "#/$defs/hero"}, {"$ref": "#/$defs/section"}, {"$ref": "#/$defs/download"},
+        {"$ref": "#/$defs/feature"}, {"$ref": "#/$defs/trust"}, {"$ref": "#/$defs/final_cta"}
+      ]
+    },
+    "hero": {
+      "type": "object", "required": ["id", "type", "heading"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "type": {"const": "hero"},
+        "heading": {"$ref": "#/$defs/plain"}, "subtitle": {"$ref": "#/$defs/inline"},
+        "screenshots": {"type": "array", "minItems": 1, "maxItems": 2, "items": {"$ref": "#/$defs/screenshot"}}
+      }
+    },
+    "section": {
+      "type": "object", "required": ["id", "type", "content"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "type": {"const": "section"},
+        "heading": {"$ref": "#/$defs/plain"},
+        "divider": {"type": "boolean", "description": "false = no divider line above the section (default true)"},
+        "content": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/element"}}
+      }
+    },
+    "element": {
+      "oneOf": [
+        {"$ref": "#/$defs/p"}, {"$ref": "#/$defs/list"}, {"$ref": "#/$defs/h3"}, {"$ref": "#/$defs/contact_box"}
+      ]
+    },
+    "p":    {"type": "object", "required": ["type", "text"], "additionalProperties": false,
+             "properties": {"type": {"const": "p"}, "text": {"$ref": "#/$defs/inline"}}},
+    "h3":   {"type": "object", "required": ["type", "text"], "additionalProperties": false,
+             "properties": {"type": {"const": "h3"}, "text": {"$ref": "#/$defs/plain"}}},
+    "list": {"type": "object", "required": ["type", "items"], "additionalProperties": false,
+             "properties": {"type": {"const": "list"}, "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/inline"}}}},
+    "contact_box": {"type": "object", "required": ["type"], "additionalProperties": false,
+                    "properties": {"type": {"const": "contact_box"}},
+                    "description": "Postal address, phone and email from config.json"},
+    "download": {
+      "type": "object", "required": ["id", "type", "text"], "additionalProperties": false,
+      "properties": {"id": {"$ref": "#/$defs/id"}, "type": {"const": "download"}, "text": {"$ref": "#/$defs/inline"}}
+    },
+    "final_cta": {
+      "type": "object", "required": ["id", "type"], "additionalProperties": false,
+      "properties": {"id": {"$ref": "#/$defs/id"}, "type": {"const": "final_cta"}}
+    },
+    "feature": {
+      "type": "object", "required": ["id", "type", "heading", "intro", "screenshot", "items"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "type": {"const": "feature"},
+        "heading": {"$ref": "#/$defs/plain"}, "intro": {"$ref": "#/$defs/inline"},
+        "reverse": {"type": "boolean", "description": "true = image on the left"},
+        "screenshot": {"$ref": "#/$defs/screenshot"},
+        "items": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "required": ["title", "text"], "additionalProperties": false,
+          "properties": {"title": {"$ref": "#/$defs/plain"}, "text": {"$ref": "#/$defs/inline"}}}}
+      }
+    },
+    "trust": {
+      "type": "object", "required": ["id", "type", "heading", "paragraphs"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "type": {"const": "trust"},
+        "variant": {"enum": ["default", "feature", "last"], "description": "Visual style: default, feature (index page), last (final block of a page)"},
+        "heading": {"$ref": "#/$defs/plain"},
+        "emphasis": {"$ref": "#/$defs/plain", "description": "Bold lead sentence, shown without markup"},
+        "paragraphs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/inline"}}
+      }
+    }
+  }
+}
