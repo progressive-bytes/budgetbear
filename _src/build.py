@@ -194,6 +194,11 @@ def main():
         if len(errors) > 60:
             print(f"  ... and {len(errors) - 60} more")
         sys.exit(1)
+    for lg in LANGS:                  # switcher and hreflang need every active language's name, validated or not
+        if lg not in data:
+            d, _ = load_json(SRC / "content" / f"{lg}.json")
+            data[lg] = d if d and "name" in d else {"name": lg}
+
     pending = f"\npending languages (no content file yet): {', '.join(PENDING)}" if PENDING and not only else ""
     if validate_only:
         print(f"content valid: {', '.join(langs)}{pending}")
