@@ -8,6 +8,7 @@ python3 _src/build.py              # validate the content, then (re)generate all
 python3 _src/build.py --validate   # validate the content only, write nothing
 python3 _src/build.py --check      # validate, then list generated pages that are out of date (-c)
 python3 _src/build.py --lang tr    # restrict validation and build to one language (repeatable)
+python3 _src/build.py --help       # all options
 ```
 
 Python 3 only, no packages. Commit the generated files together with their sources.

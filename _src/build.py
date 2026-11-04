@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 """Static site generator for the BudgetBear companion website.
 
-Usage (from the repo root):
-    python3 _src/build.py              # validate the content, then (re)generate all pages
-    python3 _src/build.py --validate   # validate the content only, write nothing
-    python3 _src/build.py --check      # validate, then list generated pages that are out of date (-c)
-    python3 _src/build.py --lang tr    # restrict validation and build to one language (repeatable)
-
-Input:  _src/config.json, _src/content/<lang>.json (checked against _src/schema/content.schema.json),
-        _src/templates/. Output: HTML in the repo root (default language) and <lang>/ folders.
-Generated files must not be edited by hand. Python 3 standard library only.
+Run `python3 _src/build.py --help` for usage. Reads _src/config.json and _src/content/<lang>.json (checked
+against _src/schema/content.schema.json), renders them with _src/templates/ and _src/blocks.py and writes
+the HTML pages to the repo root (default language) and <lang>/ folders. Python 3 standard library only.
 """
-import json, os, re, sys
+import argparse, json, os, re, sys
 from pathlib import Path
 
 sys.dont_write_bytecode = True      # no __pycache__ folders in the repo
@@ -127,11 +121,33 @@ def build_page(lang, page, tpl, langs_data):
     return re.sub(r"\n\n(\s*</head>)", r"\n\1", out)        # no blank line before </head>
 
 
+def parse_args():
+    ap = argparse.ArgumentParser(
+        prog="python3 _src/build.py",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description="Validate the website content and generate the pages.\n\n"
+                    "Without options the content is validated and all pages are (re)generated.",
+        epilog="examples:\n"
+               "  python3 _src/build.py                 validate and build all languages\n"
+               "  python3 _src/build.py --validate      validate only\n"
+               "  python3 _src/build.py -c              list pages that are out of date\n"
+               "  python3 _src/build.py --lang de       validate and build German only\n\n"
+               "input:  _src/config.json, _src/content/<lang>.json, _src/schema/content.schema.json, _src/templates/\n"
+               "output: HTML in the repo root (default language) and <lang>/ folders; never edit those by hand.\n"
+               "format: see _src/README.md")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--validate", action="store_true", help="validate the content only, write nothing")
+    mode.add_argument("-c", "--check", action="store_true",
+                      help="validate, then list generated pages that are out of date; write nothing, exit code 1 if any")
+    ap.add_argument("--lang", action="append", default=[], metavar="LANG",
+                    help="restrict validation and build to this language (repeatable); "
+                         "the default language is always read for the structure comparison")
+    return ap.parse_args()
+
+
 def main():
-    argv = sys.argv[1:]
-    validate_only = "--validate" in argv
-    check = "--check" in argv or "-c" in argv
-    only = [argv[i + 1] for i, a in enumerate(argv) if a == "--lang" and i + 1 < len(argv)]
+    args = parse_args()
+    validate_only, check, only = args.validate, args.check, args.lang
     unknown = [l for l in only if l not in LANGS]
     if unknown:
         sys.exit(f"error: language {', '.join(unknown)} is not in config.json (languages: {', '.join(LANGS)})")
