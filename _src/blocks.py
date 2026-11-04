@@ -16,8 +16,8 @@ def indent(lines, n=1):
 
 class Ctx:
     """What a block needs to know about the page it is rendered into."""
-    def __init__(self, lang, root, site_url, badge_file, badge_alt, app_store_url, contact, contact_lang):
-        self.lang, self.root, self.site_url = lang, root, site_url
+    def __init__(self, shots_dir, root, site_url, badge_file, badge_alt, app_store_url, contact, contact_lang):
+        self.shots_dir, self.root, self.site_url = shots_dir, root, site_url
         self.badge_file, self.badge_alt, self.app_store_url = badge_file, badge_alt, app_store_url
         self.contact, self.contact_lang = contact, contact_lang
 
@@ -32,7 +32,7 @@ def inline(text, ctx):
 
 def screenshot(shot, ctx):
     cls = "app-screenshot dark" if shot.get("dark") else "app-screenshot"
-    return (f'<img src="{ctx.root}images/screenshots/{ctx.lang}/{shot["name"]}.webp" '
+    return (f'<img src="{ctx.root}images/screenshots/{ctx.shots_dir}/{shot["name"]}.webp" '
             f'alt="{esc_attr(shot["alt"])}" class="{cls}">')
 
 

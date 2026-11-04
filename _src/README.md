@@ -18,7 +18,7 @@ An invalid content file stops the build with the exact location of each problem.
 
 | Path | Purpose |
 |---|---|
-| `config.json` | Base URL, default language (served at the site root), language list (= switcher order), pages, App Store URL, contact details, legacy redirect folders (`gb`) |
+| `config.json` | Base URL, default language (served at the site root), languages, App Store locale table, pages, App Store URL, contact details, legacy redirect folders (`gb`) |
 | `content/<lang>.json` | **All content of one language**: names, labels, metadata and the page blocks |
 | `schema/content.schema.json` | The format of `content/<lang>.json` (JSON Schema). The contract for everything that writes content |
 | `blocks.py` | The HTML of each block type |
@@ -26,7 +26,23 @@ An invalid content file stops the build with the exact location of each problem.
 | `templates/redirect.html` | Stub for legacy URLs such as `/gb/` |
 | `validate.py` | Schema validation and the cross-language structure check |
 
-Assets: `images/screenshots/<lang>/` (screenshots) and `images/badges/` (App Store badges, one SVG per language).
+## Languages (`config.json`)
+
+`languages` lists every language the website is planned to have, in switcher order. An entry has:
+
+- `code`: the language tag (`en`, `de`, `zh-Hans`). It is used for `<html lang>`, hreflang and the content file name `content/<code>.json`.
+- `dir` (optional, default = `code`): the URL folder and screenshot folder, **taken from the URL infix in the App Store
+  metadata** (`.../budgetbear/<dir>/privacy`). It differs from the code where the existing URLs do, e.g. `zh-Hans` -> `zh`, `zh-Hant` -> `tw`.
+  The default language lives at the site root and uses its `dir` only for the screenshot folder.
+- `source_locale`: the App Store metadata locale used as the reference for terminology and tone when this language is written.
+
+`app_store_locales` maps every App Store locale to the website language that serves its URLs
+(e.g. `pt-BR` and `pt-PT` -> `pt`; locales without a page of their own -> `en`).
+
+A language becomes **active** when `content/<code>.json` exists. Switchers and hreflang lists only contain active
+languages; the others are reported as "pending". The build rejects reserved or shared folder names.
+
+Assets: `images/screenshots/<dir>/` (screenshots) and `images/badges/` (App Store badges, one SVG per language).
 
 ## Content file (`content/<lang>.json`)
 
@@ -73,12 +89,12 @@ paragraphs, list items and feature items, and the same screenshot names. Only th
 
 ## Adding a language
 
-1. Copy `content/en.json` to `content/<lang>.json` and translate it (keep the structure, the ids and
-   the screenshot names; translate text, alt texts and metadata). The code is also the folder name,
-   e.g. `es` or `zh-Hans`.
-2. Add the code to `languages` in `config.json`.
-3. Put the screenshots into `images/screenshots/<lang>/` and the badge into `images/badges/`.
-4. Run `python3 _src/build.py --lang <lang>` (validates and builds that language), later the full build.
+1. Make sure the language is in `languages` in `config.json` (with `dir` and `source_locale`) and that its App Store
+   locales are in `app_store_locales`.
+2. Copy `content/en.json` to `content/<code>.json` and translate it (keep the structure, the ids and
+   the screenshot names; translate text, alt texts and metadata).
+3. Put the screenshots into `images/screenshots/<dir>/` and the badge into `images/badges/`.
+4. Run `python3 _src/build.py --lang <code>` (validates and builds that language), later the full build.
    The build warns about missing images.
 
 Every other page gets the new language in its switcher and hreflang list automatically.

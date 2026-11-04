@@ -2,18 +2,58 @@
   "base_url": "https://www.progressive-bytes.com/budgetbear/",
   "default_language": "en",
   "languages": [
-    "en",
-    "de"
+    {"code": "en", "source_locale": "en-US"},
+    {"code": "de", "source_locale": "de-DE"},
+    {"code": "es", "source_locale": "es-ES"},
+    {"code": "fr", "source_locale": "fr-FR"},
+    {"code": "it", "source_locale": "it"},
+    {"code": "ja", "source_locale": "ja"},
+    {"code": "ko", "source_locale": "ko"},
+    {"code": "pl", "source_locale": "pl"},
+    {"code": "pt", "source_locale": "pt-BR"},
+    {"code": "ru", "source_locale": "ru"},
+    {"code": "tr", "source_locale": "tr"},
+    {"code": "zh-Hans", "dir": "zh", "source_locale": "zh-Hans"},
+    {"code": "zh-Hant", "dir": "tw", "source_locale": "zh-Hant"}
   ],
+  "app_store_locales": {
+    "en-US": "en",
+    "en-GB": "en",
+    "en-AU": "en",
+    "en-CA": "en",
+    "ca": "en",
+    "cs": "en",
+    "da": "en",
+    "el": "en",
+    "fi": "en",
+    "id": "en",
+    "nl-NL": "en",
+    "no": "en",
+    "ro": "en",
+    "sv": "en",
+    "uk": "en",
+    "de-DE": "de",
+    "es-ES": "es",
+    "es-MX": "es",
+    "fr-FR": "fr",
+    "fr-CA": "fr",
+    "it": "it",
+    "ja": "ja",
+    "ko": "ko",
+    "pl": "pl",
+    "pt-BR": "pt",
+    "pt-PT": "pt",
+    "ru": "ru",
+    "tr": "tr",
+    "zh-Hans": "zh-Hans",
+    "zh-Hant": "zh-Hant"
+  },
   "pages": [
     "index",
     "contact",
     "privacy"
   ],
   "app_store_url": "https://apps.apple.com/app/id6759972859",
-  "redirect_folders": [
-    "gb"
-  ],
   "contact": {
     "organization": "Progressive Bytes",
     "person": "Nils Anspach",
@@ -24,5 +64,8 @@
     ],
     "phone": "+49 2571 5403212",
     "email": "contact@progressive-bytes.com"
-  }
+  },
+  "redirect_folders": [
+    "gb"
+  ]
 }
