@@ -19,7 +19,7 @@
       }
     },
     "copyright":  {"$ref": "#/$defs/plain"},
-    "badge_file": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+\\.svg$", "description": "File in images/badges/"},
+    "badge_file": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+\\.svg$", "description": "Badge SVG file name: looked up in the language's own images/ folder, otherwise in the root images/ folder"},
     "badge_alt":  {"$ref": "#/$defs/plain"},
     "currency":   {"type": "string", "pattern": "^[A-Z]{3}$", "description": "ISO 4217 code for the structured data"},
     "contact": {
@@ -53,7 +53,7 @@
       "required": ["name", "alt"],
       "additionalProperties": false,
       "properties": {
-        "name": {"type": "string", "pattern": "^[A-Za-z0-9-]+$", "description": "File name without extension in images/screenshots/<lang>/"},
+        "name": {"type": "string", "pattern": "^[A-Za-z0-9-]+$", "description": "File name without extension in the images/ folder of the language (next to its pages)"},
         "alt":  {"$ref": "#/$defs/plain"},
         "dark": {"type": "boolean", "description": "true for a dark-mode screenshot (adds the dark style)"}
       }

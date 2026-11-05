@@ -16,9 +16,9 @@ def indent(lines, n=1):
 
 class Ctx:
     """What a block needs to know about the page it is rendered into."""
-    def __init__(self, shots_dir, root, site_url, badge_file, badge_alt, app_store_url, contact, contact_lang):
-        self.shots_dir, self.root, self.site_url = shots_dir, root, site_url
-        self.badge_file, self.badge_alt, self.app_store_url = badge_file, badge_alt, app_store_url
+    def __init__(self, root, site_url, badge_src, badge_alt, app_store_url, contact, contact_lang):
+        self.root, self.site_url = root, site_url
+        self.badge_src, self.badge_alt, self.app_store_url = badge_src, badge_alt, app_store_url
         self.contact, self.contact_lang = contact, contact_lang
 
 
@@ -32,13 +32,13 @@ def inline(text, ctx):
 
 def screenshot(shot, ctx):
     cls = "app-screenshot dark" if shot.get("dark") else "app-screenshot"
-    return (f'<img src="{ctx.root}images/screenshots/{ctx.shots_dir}/{shot["name"]}.webp" '
+    return (f'<img src="images/{shot["name"]}.webp" '
             f'alt="{esc_attr(shot["alt"])}" class="{cls}">')
 
 
 def badge(ctx):
     return [f'<a href="{ctx.app_store_url}" target="_blank" rel="noopener">',
-            f'    <img src="{ctx.root}images/badges/{ctx.badge_file}" alt="{esc_attr(ctx.badge_alt)}" class="download-cta-badge">',
+            f'    <img src="{ctx.badge_src}" alt="{esc_attr(ctx.badge_alt)}" class="download-cta-badge">',
             '</a>']
 
 

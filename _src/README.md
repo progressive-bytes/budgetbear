@@ -31,9 +31,9 @@ An invalid content file stops the build with the exact location of each problem.
 `languages` lists every language the website is planned to have, in switcher order. An entry has:
 
 - `code`: the language tag (`en`, `de`, `zh-Hans`). It is used for `<html lang>`, hreflang and the content file name `content/<code>.json`.
-- `dir` (optional, default = `code`): the URL folder and screenshot folder, **taken from the URL infix in the App Store
+- `dir` (optional, default = `code`): the URL folder, which also holds the language's `images/` folder, **taken from the URL infix in the App Store
   metadata** (`.../budgetbear/<dir>/privacy`). It differs from the code where the existing URLs do, e.g. `zh-Hans` -> `zh`, `zh-Hant` -> `tw`.
-  The default language lives at the site root and uses its `dir` only for the screenshot folder.
+  The default language lives at the site root, so its images are in the root `images/`.
 - `source_locale`: the App Store metadata locale used as the reference for terminology and tone when this language is written.
 
 `app_store_locales` maps every App Store locale to the website language that serves its URLs
@@ -42,8 +42,7 @@ An invalid content file stops the build with the exact location of each problem.
 A language becomes **active** when `content/<code>.json` exists. Switchers and hreflang lists only contain active
 languages; the others are reported as "pending". The build rejects reserved or shared folder names.
 
-Assets: `images/screenshots/<dir>/` (screenshots) and `images/badges/` (App Store badges, one SVG per language).
-
+Images: each language has its own `images/` folder next to its pages (`de/images/`, `es/images/`; for the default language the root `images/`) with its four screenshots and its App Store badge. The root `images/` also holds the shared assets (app icon, favicons). A badge that a language does not have of its own is taken from the root `images/` folder.
 ## Content file (`content/<lang>.json`)
 
 Top level: `name` (language name in that language, shown in the switcher), `tagline`, `icon_alt`, `nav`
@@ -93,7 +92,7 @@ paragraphs, list items and feature items, and the same screenshot names. Only th
    locales are in `app_store_locales`.
 2. Copy `content/en.json` to `content/<code>.json` and translate it (keep the structure, the ids and
    the screenshot names; translate text, alt texts and metadata).
-3. Put the screenshots into `images/screenshots/<dir>/` and the badge into `images/badges/`.
+3. Put the screenshots and the badge into `<dir>/images/`.
 4. Run `python3 _src/build.py --lang <code>` (validates and builds that language), later the full build.
    The build warns about missing images.
 

@@ -43,7 +43,7 @@ def render(text, ctx, where):
     return "\n".join(out)
 
 
-def lang_dir(lang):                  # folder name: URL folder and screenshot folder; defaults to the code
+def lang_dir(lang):                  # folder name: URL folder and folder of the language's images; defaults to the code
     return LANG_CFG[lang].get("dir", lang)
 
 
@@ -103,7 +103,9 @@ def build_page(lang, page, tpl, langs_data):
     depth = 0 if lang == DEFAULT else 1
     root = "../" * depth
     site_url = BASE + page_dir(lang)
-    bctx = B.Ctx(lang_dir(lang), root, site_url, L["badge_file"], L["badge_alt"], CFG["app_store_url"], CFG["contact"], L["contact"])
+    own_badge = ROOT / page_dir(lang) / "images" / L["badge_file"]      # the language's own images folder, else the root one
+    badge_src = ("images/" if own_badge.exists() else root + "images/") + L["badge_file"]
+    bctx = B.Ctx(root, site_url, badge_src, L["badge_alt"], CFG["app_store_url"], CFG["contact"], L["contact"])
     body = B.render_blocks(P["blocks"], bctx)
 
     url = lambda lg: BASE + page_path(lg, page)
