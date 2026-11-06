@@ -123,8 +123,8 @@
           "intro": "De los fondos de ahorro con un fin a las compras grandes, BudgetBear se adapta a tus objetivos.",
           "reverse": true,
           "screenshot": {
-            "name": "Add-ProjectPayment-Recurrence",
-            "alt": "Añadir un nuevo pago con repetición a un proyecto en BudgetBear",
+            "name": "ProjectDetails",
+            "alt": "Detalles de un proyecto en BudgetBear en modo oscuro: título, divisa, presupuesto y saldo",
             "dark": true
           },
           "items": [

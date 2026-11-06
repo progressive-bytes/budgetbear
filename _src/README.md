@@ -116,11 +116,11 @@ The output goes to the language's own images folder (`images/` for the default l
 `_src/screenshots.json` holds the settings:
 
 - `source_dir`: the fastlane screenshots folder (relative to the website repo root, or absolute); a command line argument overrides it.
-- `device`: part of the PNG file name that selects the device (fastlane names files `<device>-<snapshot name>.png`). Exactly one file must match each shot.
-- `shots`: website image name -> snapshot name. Add or rename entries here when the pages use other screenshots.
+- `shots`: website image name -> file name in the fastlane locale folder. The file names are the same in every locale folder.
+  Add or rename entries here when the pages use other screenshots.
 - `width` and `quality`: size and webp quality of the output (the height follows the aspect ratio).
-- `locales`: only needed where the fastlane locale folder differs from the language's `source_locale` in `config.json`
-  (e.g. `"es": "es-MX"`). By default `source_locale` is used, then the language code, then a unique folder with the same language.
+- `locales`: only needed where a language should use another fastlane locale folder than its `source_locale` in `config.json`
+  (e.g. `"es": "es-MX"`).
 
-Files that are already up to date are skipped (`--force` converts again). `--list <locale>` shows the PNG names and sizes in
-one fastlane locale folder. The script warns when the source PNGs differ in size, which usually means the wrong device was selected.
+Files that are already up to date are skipped (`--force` converts again). `--list <locale>` shows the PNG files in one
+fastlane locale folder, to copy the exact names into `shots`.

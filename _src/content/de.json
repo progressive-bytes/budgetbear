@@ -123,8 +123,8 @@
           "intro": "Von Rücklagen bis zu größeren Anschaffungen — BudgetBear passt sich deinen Sparzielen an.",
           "reverse": true,
           "screenshot": {
-            "name": "Add-ProjectPayment-Recurrence",
-            "alt": "Neue wiederkehrende Zahlung zu Vorhaben in BudgetBear hinzufügen",
+            "name": "ProjectDetails",
+            "alt": "Details eines Vorhabens in BudgetBear im Dunkelmodus: Titel, Währung, Budget und Kontostand",
             "dark": true
           },
           "items": [

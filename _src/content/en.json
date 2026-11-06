@@ -123,8 +123,8 @@
           "intro": "From sinking funds to major purchases, BudgetBear adapts to your goals.",
           "reverse": true,
           "screenshot": {
-            "name": "Add-ProjectPayment-Recurrence",
-            "alt": "Add New Payment with Recurrence to Project in BudgetBear",
+            "name": "ProjectDetails",
+            "alt": "BudgetBear Project Details in Dark Mode: Title, Currency, Budget, and Balance",
             "dark": true
           },
           "items": [

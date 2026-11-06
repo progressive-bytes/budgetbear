@@ -1,13 +1,12 @@
 {
-  "source_dir": "../../../AppStore/Worktrees/main/fastlane/screenshots",
-  "device": "iPhone",
+  "source_dir": "../../../AppStore/Worktrees/devel/fastlane/screenshots",
   "width": 660,
   "quality": 80,
   "shots": {
-    "Projects": "Projects",
-    "ProjectGoals": "ProjectGoals",
-    "ProjectPayments": "ProjectPayments",
-    "Add-ProjectPayment-Recurrence": "Add-ProjectPayment-Recurrence"
+    "Projects": "iPhone 17 Pro Max-01_Projects.png",
+    "ProjectGoals": "iPhone 17 Pro Max-03_Goals.png",
+    "ProjectPayments": "iPhone 17 Pro Max-04_Payments.png",
+    "ProjectDetails": "iPhone 17 Pro Max-08_ProjectDetails_Dark.png"
   },
   "locales": {}
 }
