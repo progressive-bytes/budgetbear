@@ -124,3 +124,18 @@ The output goes to the language's own images folder (`images/` for the default l
 
 Files that are already up to date are skipped (`--force` converts again). `--list <locale>` shows the PNG files in one
 fastlane locale folder, to copy the exact names into `shots`.
+
+## App Store badges
+
+Apple's badge download is large (hundreds of MB) and stays **outside** the repository. Only the one SVG (about 10 KB) per
+language that the website uses is committed, in the language's own images folder.
+
+```bash
+python3 _src/badges.py --list DE       # find the exact file name in the download (name contains "DE")
+# put that file name into "badge_file" of _src/content/<code>.json, and the badge's wording into "badge_alt"
+python3 _src/badges.py                 # copy the badges named in the content files; --dry-run to preview; --help for all options
+python3 _src/build.py
+```
+
+Set the folder of the download in `_src/badges.json` (`source_dir`, relative to the website repo root or absolute) or pass it as an argument.
+A language without its own badge uses the default language's badge from the root `images/` folder (keep its English `badge_alt`).
