@@ -101,3 +101,26 @@ Every other page gets the new language in its switcher and hreflang list automat
 ## Changing the policy
 
 Update the text in all languages and the "Last Updated" line (the `subtitle` of the privacy `hero`), then rebuild.
+
+## Screenshots
+
+The website uses four small webp screenshots per language, converted from the fastlane snapshot PNGs:
+
+```bash
+brew install webp                      # once (provides cwebp)
+python3 _src/screenshots.py            # all languages; --lang de for one; --dry-run to preview; --help for all options
+python3 _src/build.py                  # then regenerate the pages
+```
+
+The output goes to the language's own images folder (`images/` for the default language, `<dir>/images/` for the others).
+`_src/screenshots.json` holds the settings:
+
+- `source_dir`: the fastlane screenshots folder (relative to the website repo root, or absolute); a command line argument overrides it.
+- `device`: part of the PNG file name that selects the device (fastlane names files `<device>-<snapshot name>.png`). Exactly one file must match each shot.
+- `shots`: website image name -> snapshot name. Add or rename entries here when the pages use other screenshots.
+- `width` and `quality`: size and webp quality of the output (the height follows the aspect ratio).
+- `locales`: only needed where the fastlane locale folder differs from the language's `source_locale` in `config.json`
+  (e.g. `"es": "es-MX"`). By default `source_locale` is used, then the language code, then a unique folder with the same language.
+
+Files that are already up to date are skipped (`--force` converts again). `--list <locale>` shows the PNG names and sizes in
+one fastlane locale folder. The script warns when the source PNGs differ in size, which usually means the wrong device was selected.

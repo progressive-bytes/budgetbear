@@ -1,0 +1,13 @@
+{
+  "source_dir": "../../../AppStore/Worktrees/main/fastlane/screenshots",
+  "device": "iPhone",
+  "width": 660,
+  "quality": 80,
+  "shots": {
+    "Projects": "Projects",
+    "ProjectGoals": "ProjectGoals",
+    "ProjectPayments": "ProjectPayments",
+    "Add-ProjectPayment-Recurrence": "Add-ProjectPayment-Recurrence"
+  },
+  "locales": {}
+}
