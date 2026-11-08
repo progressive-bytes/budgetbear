@@ -4,14 +4,20 @@ The pages in the repo root (`index.html`, `contact.html`, `privacy.html`) and in
 folders (`de/`, ...) are **generated**. Edit the sources here, then build:
 
 ```bash
-python3 _src/build.py              # validate the content, then (re)generate all pages
+python3 _src/build.py              # the whole build: validate, copy the badges, convert the screenshots, generate the pages
+python3 _src/build.py --build-only # only validate and generate the pages (leave badges and screenshots alone)
 python3 _src/build.py --validate   # validate the content only, write nothing
-python3 _src/build.py --check      # validate, then list generated pages that are out of date (-c)
-python3 _src/build.py --lang tr    # restrict validation and build to one language (repeatable)
+python3 _src/build.py --check      # show what a build would change, write nothing (-c)
+python3 _src/build.py --verify     # the final check before uploading: is everything complete and correct? (read-only)
+python3 _src/build.py --lang tr    # restrict the build to one language (repeatable)
+python3 _src/build.py --force      # copy the badges and convert the screenshots again even if they are up to date
 python3 _src/build.py --help       # all options
 ```
 
-Python 3 only, no packages. Commit the generated files together with their sources.
+Python 3 only, no packages (converting screenshots needs `cwebp`, macOS: `brew install webp`). Commit the generated files together with their sources.
+One build handles everything in the right order: the badges and screenshots are copied and converted first, because the pages link to the files that exist.
+Only languages that have a content file are built, and all steps treat them the same way. A step whose source folder is not available
+(for example on another machine) is skipped with a message; a missing file for an existing language is reported as a problem (exit code 1).
 An invalid content file stops the build with the exact location of each problem.
 
 ## Layout
@@ -25,6 +31,9 @@ An invalid content file stops the build with the exact location of each problem.
 | `templates/page.html` | Shared head, header, footer, language switcher, hreflang |
 | `templates/redirect.html` | Stub for legacy URLs such as `/gb/` |
 | `validate.py` | Schema validation and the cross-language structure check |
+| `verify.py`, `verify.json` | The final check (`--verify`) and its settings |
+| `badges.py`, `screenshots.py` | The badge and screenshot steps. `build.py` runs them; run them alone only for `--list` or to debug |
+| `sitecfg.py` | Configuration helpers shared by the scripts |
 
 ## Languages (`config.json`)
 
@@ -92,9 +101,10 @@ paragraphs, list items and feature items, and the same screenshot names. Only th
    locales are in `app_store_locales`.
 2. Copy `content/en.json` to `content/<code>.json` and translate it (keep the structure, the ids and
    the screenshot names; translate text, alt texts and metadata).
-3. Put the screenshots and the badge into `<dir>/images/`.
-4. Run `python3 _src/build.py --lang <code>` (validates and builds that language), later the full build.
-   The build warns about missing images.
+3. Check that `source_locale` points to the fastlane locale folder with the screenshots (or add an entry under `locales` in `screenshots.json`)
+   and that the badge file named in the content file exists in the badge download.
+4. Run `python3 _src/build.py`. It creates `<dir>/images/` with the badge and the screenshots and generates the pages.
+   `--lang <code>` restricts it to that language.
 
 Every other page gets the new language in its switcher and hreflang list automatically.
 
@@ -102,40 +112,48 @@ Every other page gets the new language in its switcher and hreflang list automat
 
 Update the text in all languages and the "Last Updated" line (the `subtitle` of the privacy `hero`), then rebuild.
 
+## Before uploading: `python3 _src/build.py --verify`
+
+Run this once at the end, after the build. It changes nothing and ends with `RESULT: OK` or a list of errors (exit code 1).
+Errors mean the website is not ready to upload; warnings are worth a look. It checks:
+
+- the pages of every language exist (`index`, `contact`, `privacy`) and are up to date with the sources; the legacy redirect folders are there;
+  no page folder of a language that is not built is left over; every language in `config.json` has content (a language that an App Store locale links to must not be missing);
+- every page: well formed, correct `<html lang>`, title and description, canonical URL, `og:url`, hreflang list (all languages and `x-default`) and structured data;
+- the language switcher of every page lists every language, in order, with the right links;
+- every link, image, stylesheet and icon on every page resolves to an existing file;
+- every language shows **its own** badge and screenshots from its own `images/` folder; badge files are valid SVGs, screenshots are valid webp files
+  of the configured width with a consistent aspect ratio; a language that shows the default language's badge is an error (unless listed under `allow_default_badge`);
+- pages of other languages are not left in English (title and description);
+- the App Store URLs (`support_url.txt`, `marketing_url.txt`, `privacy_url.txt`) of every locale lead to existing pages, and the URL files in the fastlane metadata match;
+- warnings: unused files in a language's `images/` folder, files larger than `max_asset_kb`, screenshots that are byte-identical in two languages,
+  and shown files that are not committed yet (a file only goes online after `git add` and commit; files ignored by git are an error).
+
+`_src/verify.json`: `metadata_dir` (fastlane metadata folder, relative to the repo root or absolute; skipped with a warning if it does not exist),
+`allow_default_badge` (language codes that may show the default badge because Apple has none), `max_asset_kb` (size limit for the warning).
+`--verify --lang de` checks only that language's pages and leaves out the checks that concern all languages.
+
 ## Screenshots
 
-The website uses four small webp screenshots per language, converted from the fastlane snapshot PNGs:
+The website uses four small webp screenshots per language, converted from the fastlane snapshot PNGs by `python3 _src/build.py`
+(needs `cwebp`: `brew install webp`). The output goes to the language's own images folder (`images/` for the default language,
+`<dir>/images/` for the others). `_src/screenshots.json` holds the settings:
 
-```bash
-brew install webp                      # once (provides cwebp)
-python3 _src/screenshots.py            # all languages; --lang de for one; --dry-run to preview; --help for all options
-python3 _src/build.py                  # then regenerate the pages
-```
-
-The output goes to the language's own images folder (`images/` for the default language, `<dir>/images/` for the others).
-`_src/screenshots.json` holds the settings:
-
-- `source_dir`: the fastlane screenshots folder (relative to the website repo root, or absolute); a command line argument overrides it.
+- `source_dir`: the fastlane screenshots folder (relative to the website repo root, or absolute).
 - `shots`: website image name -> file name in the fastlane locale folder. The file names are the same in every locale folder.
   Add or rename entries here when the pages use other screenshots.
 - `width` and `quality`: size and webp quality of the output (the height follows the aspect ratio).
 - `locales`: only needed where a language should use another fastlane locale folder than its `source_locale` in `config.json`
   (e.g. `"es": "es-MX"`).
 
-Files that are already up to date are skipped (`--force` converts again). `--list <locale>` shows the PNG files in one
-fastlane locale folder, to copy the exact names into `shots`.
+Files that are already up to date are skipped (`--force` converts again). To copy the exact names into `shots`, list the PNG files of one
+fastlane locale folder: `python3 _src/screenshots.py --list de-DE`.
 
 ## App Store badges
 
 Apple's badge download is large (hundreds of MB) and stays **outside** the repository. Only the one SVG (about 10 KB) per
-language that the website uses is committed, in the language's own images folder.
+language that the website uses is committed, in the language's own images folder. `python3 _src/build.py` copies the badges named in
+the content files (`badge_file`) from the download folder set in `_src/badges.json` (`source_dir`, relative to the website repo root or absolute).
 
-```bash
-python3 _src/badges.py --list DE       # find the exact file name in the download (name contains "DE")
-# put that file name into "badge_file" of _src/content/<code>.json, and the badge's wording into "badge_alt"
-python3 _src/badges.py                 # copy the badges named in the content files; --dry-run to preview; --help for all options
-python3 _src/build.py
-```
-
-Set the folder of the download in `_src/badges.json` (`source_dir`, relative to the website repo root or absolute) or pass it as an argument.
+To find the exact file name of a badge: `python3 _src/badges.py --list DE` lists the files in the download whose name contains "DE".
 A language without its own badge uses the default language's badge from the root `images/` folder (keep its English `badge_alt`).

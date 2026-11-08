@@ -1,0 +1,450 @@
+{
+  "name": "Français",
+  "tagline": "Votre suivi d’épargne privé et planificateur d’objectifs",
+  "icon_alt": "Icône BudgetBear",
+  "nav": {
+    "home": "Accueil",
+    "privacy": "Confidentialité",
+    "contact": "Contact"
+  },
+  "copyright": "© 2026 Progressive Bytes. Tous droits réservés.",
+  "badge_file": "Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
+  "badge_alt": "Download on the App Store",
+  "currency": "EUR",
+  "contact": {
+    "phone_label": "Téléphone :",
+    "email_label": "E-mail :",
+    "country": "Allemagne"
+  },
+  "pages": {
+    "index": {
+      "title": "BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac — Sans abonnement. Sans traceur. Sans compte spécifique.",
+      "og_title": "BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac",
+      "description": "BudgetBear est un suivi d’épargne privé pour iPhone, iPad et Mac. Transformez votre liste d’envies en chronologie en priorisant vos objectifs et en planifiant vos dépôts : BudgetBear calcule exactement quand vous pourrez vous offrir chaque achat. Sans abonnement, sans traceur et sans compte spécifique.",
+      "og_description": "BudgetBear est un suivi d’épargne privé pour iPhone, iPad et Mac. Transformez votre liste d’envies en chronologie en priorisant vos objectifs et en planifiant vos dépôts : BudgetBear calcule exactement quand vous pourrez vous offrir chaque achat. Sans abonnement, sans traceur et sans compte spécifique.",
+      "keywords": "suivi d’épargne, cagnottes, planificateur d’objectifs, application liste d’envies, planificateur d’achats, application de budget, objectifs d’épargne, planification financière, liste de priorités, hors ligne, privé, iPhone, iPad, Mac",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "Sachez exactement quand vous pouvez acheter",
+          "subtitle": "Priorisez vos objectifs d’épargne et voyez la date la plus proche pour vous offrir chaque achat. Planification simple et privée à chronologie automatique. Sans compte.",
+          "screenshots": [
+            {
+              "name": "Projects",
+              "alt": "Projets dans BudgetBear"
+            },
+            {
+              "name": "ProjectGoals",
+              "alt": "Objectifs d’un projet dans BudgetBear"
+            }
+          ]
+        },
+        {
+          "id": "intro",
+          "type": "section",
+          "divider": false,
+          "content": [
+            {
+              "type": "p",
+              "text": "**Cessez de deviner quand vous pourrez enfin acheter le prochain article de votre liste.** BudgetBear est une application simple et privée qui transforme vos objectifs en une chronologie d’achats claire. Ajoutez vos objectifs, définissez vos priorités et planifiez vos dépôts, le tout dans une interface calme et épurée qui respecte votre vie privée."
+            }
+          ]
+        },
+        {
+          "id": "download",
+          "type": "download",
+          "text": "Prêt à commencer à planifier vos achats ? Téléchargez BudgetBear dès aujourd’hui."
+        },
+        {
+          "id": "why-choose",
+          "type": "section",
+          "heading": "Pourquoi choisir BudgetBear",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**100 % privé et sous votre contrôle** — Vos données financières restent uniquement sur votre appareil. Aucun compte spécifique, aucun serveur tiers et aucune inscription dans le cloud, jamais.",
+                "**Minimaliste et ciblé** — Une interface rapide et facile à utiliser, centrée sur l’essentiel. Sans désordre ni complexité inutile.",
+                "**Sachez exactement quand vous pouvez acheter** — BudgetBear calcule la date la plus proche à laquelle vous pouvez vous offrir chaque objectif, pour que vous n’ayez plus jamais à deviner.",
+                "**Conçu autour des priorités** — Combinez vos priorités et vos paiements planifiés pour transformer votre plan d’épargne en une date d’achat réaliste pour chaque objectif."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase-date",
+          "type": "feature",
+          "heading": "Transformez vos priorités en date d’achat",
+          "intro": "Prenez le contrôle de vos dépenses à long terme et de vos objectifs d’épargne grâce à un système conçu pour la clarté.",
+          "screenshot": {
+            "name": "ProjectPayments",
+            "alt": "Paiements d’un projet dans BudgetBear"
+          },
+          "items": [
+            {
+              "title": "Listes d’envies par priorité",
+              "text": "Ajoutez des articles cibles (objectifs) avec des prix estimés et faites-les glisser dans l’ordre exact que vous préférez."
+            },
+            {
+              "title": "Calcul dynamique de la chronologie",
+              "text": "Voyez vos dates d’achat se mettre à jour instantanément lorsque vous modifiez des prix, ajoutez des dépôts ou changez l’ordre de vos objectifs."
+            },
+            {
+              "title": "Flux d’argent flexibles",
+              "text": "Ajoutez des dépôts ponctuels pour réalimenter vos budgets ou enregistrez des retraits si vous décidez de dépenser l’argent ailleurs."
+            },
+            {
+              "title": "Paiements planifiés",
+              "text": "Créez des plans récurrents de dépôts ou de retraits avec une date de fin (par ex. un mardi sur deux ou le jour de la paie) pour que votre chronologie reste automatisée."
+            }
+          ]
+        },
+        {
+          "id": "key-features",
+          "type": "section",
+          "heading": "Fonctionnalités clés pour vos objectifs d’épargne",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**Projets d’épargne par priorité** — Regroupez les objectifs liés dans des projets dédiés pour les voyages, l’électronique, l’amélioration de l’habitat ou les réserves d’urgence.",
+                "**Versement intelligent** — L’argent est dirigé automatiquement vers votre objectif prioritaire jusqu’à ce qu’il soit entièrement financé, puis passe au suivant.",
+                "**Simple et minimaliste** — Une interface épurée et sans distraction, pensée pour une saisie rapide, sans superflu ni menus compliqués.",
+                "**Répétitions avec date de fin** — Définissez des dates de début et de fin ainsi que des intervalles pour vos contributions périodiques, sans règles compliquées."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-cases",
+          "type": "feature",
+          "heading": "Usages polyvalents pour votre épargne",
+          "intro": "Des cagnottes dédiées aux achats importants, BudgetBear s’adapte à vos objectifs.",
+          "reverse": true,
+          "screenshot": {
+            "name": "ProjectDetails",
+            "alt": "Détails d’un projet dans BudgetBear en mode sombre : titre, devise, budget et solde",
+            "dark": true
+          },
+          "items": [
+            {
+              "title": "Cagnottes dédiées",
+              "text": "Mettez de l’argent de côté pour des dépenses futures connues, comme les primes d’assurance, les achats des fêtes ou l’entretien de la voiture."
+            },
+            {
+              "title": "Listes d’envies par priorité",
+              "text": "Organisez ce que vous voulez acheter ensuite et voyez de combien un nouveau dépôt rapproche votre date d’achat."
+            },
+            {
+              "title": "Achats importants",
+              "text": "Répartissez les gros achats en contributions périodiques raisonnables et regardez votre chronologie se raccourcir au fil du temps."
+            }
+          ]
+        },
+        {
+          "id": "private-by-design",
+          "type": "trust",
+          "variant": "feature",
+          "heading": "Confidentialité dès la conception",
+          "emphasis": "Sans abonnement. Sans traceur. Sans compte spécifique.",
+          "paragraphs": [
+            "BudgetBear conserve tout en local : rien n’est envoyé, synchronisé ni partagé avec qui que ce soit. Vos objectifs et vos données budgétaires ne quittent jamais votre appareil.",
+            "Commencez gratuitement avec jusqu’à 3 projets. Avec un achat unique, Pro débloque un nombre illimité de projets, sans abonnement, jamais."
+          ]
+        },
+        {
+          "id": "clear-effective",
+          "type": "section",
+          "heading": "Clair et efficace",
+          "content": [
+            {
+              "type": "p",
+              "text": "Que vous économisiez pour des vacances ou un nouvel appareil, ou que vous constituiez un fonds d’urgence, BudgetBear est votre compagnon fiable pour transformer vos objectifs d’épargne en dates d’achat concrètes. Simple, privé et sans abonnement."
+            },
+            {
+              "type": "p",
+              "text": "Les meilleurs outils de productivité se font oublier pour vous laisser vous concentrer. C’est BudgetBear : aucune fonction inutile, aucune interface envahissante, juste une chronologie claire pour vos objectifs."
+            }
+          ]
+        },
+        {
+          "id": "final-cta",
+          "type": "final_cta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact – BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac",
+      "og_title": "Contact — BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac",
+      "description": "Contactez Progressive Bytes pour obtenir de l’assistance sur BudgetBear, proposer des fonctionnalités ou signaler des bugs.",
+      "og_description": "Assistance pour BudgetBear – Votre suivi d’épargne privé et planificateur d’objectifs. Nous serions ravis d’avoir de vos nouvelles !",
+      "keywords": "contact, assistance, commentaires, signalement de bug, demande de fonctionnalité",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "Contact",
+          "subtitle": "Nous sommes là pour vous aider."
+        },
+        {
+          "id": "get-in-touch",
+          "type": "section",
+          "heading": "Nous contacter",
+          "content": [
+            {
+              "type": "p",
+              "text": "Vous avez des questions, des commentaires ou des demandes de fonctionnalités ? Écrivez-nous et nous vous répondrons dès que possible."
+            },
+            {
+              "type": "contact_box"
+            }
+          ]
+        },
+        {
+          "id": "report-bug",
+          "type": "section",
+          "heading": "Signaler un bug ou demander une fonctionnalité",
+          "content": [
+            {
+              "type": "p",
+              "text": "Pour mieux vous aider, merci d’indiquer les informations suivantes en nous contactant :"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Modèle de l’appareil",
+                "Version d’iOS, d’iPadOS ou de macOS",
+                "Version de l’app",
+                "Description du problème ou de la demande de fonctionnalité",
+                "Captures d’écran, si possible"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "type": "trust",
+          "variant": "last",
+          "heading": "Vos commentaires sont les bienvenus",
+          "paragraphs": [
+            "Qu’il s’agisse d’un signalement de bug, d’une suggestion de fonctionnalité ou simplement d’un bonjour, vos retours aident à améliorer BudgetBear pour tout le monde."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Politique de confidentialité – BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac",
+      "og_title": "Politique de confidentialité — BudgetBear | Suivi d’épargne privé et planificateur d’objectifs pour iPhone, iPad et Mac",
+      "description": "Politique de confidentialité de BudgetBear. Découvrez comment nous protégeons vos données.",
+      "og_description": "Sans abonnement. Sans traceur. Sans compte spécifique : juste vos données, sous votre contrôle",
+      "keywords": "politique de confidentialité, RGPD, protection des données",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "Politique de confidentialité",
+          "subtitle": "Dernière mise à jour : 1er novembre 2026"
+        },
+        {
+          "id": "overview",
+          "type": "section",
+          "heading": "VUE D’ENSEMBLE",
+          "content": [
+            {
+              "type": "p",
+              "text": "Progressive Bytes (« nous », « notre » ou « nos ») exploite l’application mobile BudgetBear et le site web associé à l’adresse {site_link} (ensemble, le « Service »). La présente politique de confidentialité s’applique à l’application comme au site web."
+            },
+            {
+              "type": "p",
+              "text": "Cette page vous informe de nos pratiques concernant la collecte, l’utilisation et la divulgation de données personnelles lorsque vous utilisez notre Service. Nous nous engageons à protéger votre vie privée grâce à la **confidentialité dès la conception**."
+            }
+          ]
+        },
+        {
+          "id": "legal-basis",
+          "type": "section",
+          "heading": "BASE JURIDIQUE DU TRAITEMENT DES DONNÉES (RGPD / UK GDPR)",
+          "content": [
+            {
+              "type": "p",
+              "text": "Si vous vous trouvez dans l’Espace économique européen (EEE) ou au Royaume-Uni, notre base juridique pour le « traitement » de vos données (qui s’effectue exclusivement en local sur votre appareil) est l’**article 6, paragraphe 1, point b), du RGPD / UK GDPR** : le traitement est nécessaire à l’exécution d’un contrat (fournir la fonctionnalité de suivi d’épargne que vous avez demandée)."
+            },
+            {
+              "type": "p",
+              "text": "Pour les journaux du serveur du site web, la base juridique est l’**article 6, paragraphe 1, point f), du RGPD / UK GDPR** : intérêts légitimes à exploiter un site web fonctionnel et sécurisé."
+            }
+          ]
+        },
+        {
+          "id": "app-data",
+          "type": "section",
+          "heading": "L’APPLICATION — DONNÉES QUE NOUS COLLECTONS",
+          "content": [
+            {
+              "type": "p",
+              "text": "**Nous ne collectons aucune donnée personnelle.**"
+            },
+            {
+              "type": "p",
+              "text": "BudgetBear est conçue pour fonctionner entièrement sur votre appareil, sans collecte de données personnelles, sans compte et sans serveur. Il n’existe aucune synchronisation d’aucune sorte : vos données ne quittent jamais votre appareil. Vos projets, objectifs d’épargne, données de paiement et réglages de l’application n’appartiennent qu’à vous."
+            },
+            {
+              "type": "h3",
+              "text": "Données stockées localement :"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Données de projet :** Tous les projets, objectifs d’épargne, données de paiement et autres données associées que vous créez sont stockés localement sur votre appareil.",
+                "**Réglages de l’application :** Tous les réglages de l’application sont stockés localement sur votre appareil."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "website-data",
+          "type": "section",
+          "heading": "LE SITE WEB — DONNÉES QUE NOUS COLLECTONS",
+          "content": [
+            {
+              "type": "p",
+              "text": "Ce site web est hébergé sur GitHub Pages et se compose de quelques pages HTML statiques et de feuilles de style ; il n’y a ni base de données, ni code côté serveur, ni compte utilisateur d’aucune sorte. Nous n’utilisons ni cookies, ni traceurs, ni outils d’analyse. Nous ne collectons aucune donnée personnelle des visiteurs."
+            },
+            {
+              "type": "p",
+              "text": "Comme tout serveur web, GitHub Pages enregistre automatiquement des journaux de serveur de base lorsque vous consultez ce site. Ces journaux peuvent contenir votre adresse IP, le type de navigateur, la page de provenance ainsi que la date et l’heure de votre visite. GitHub conserve ces données conformément à sa [Déclaration de confidentialité](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Nous n’avons pas accès aux journaux des visiteurs individuels et nous n’utilisons pas ces données à des fins de suivi ou de profilage."
+            }
+          ]
+        },
+        {
+          "id": "sharing",
+          "type": "section",
+          "heading": "PARTAGE ET DIVULGATION DES DONNÉES",
+          "content": [
+            {
+              "type": "p",
+              "text": "**Nous ne partageons, ne vendons ni n’analysons vos données.**"
+            },
+            {
+              "type": "p",
+              "text": "Comme toutes les données de l’application restent sur votre appareil et que nous ne collectons aucune donnée personnelle, aucune donnée n’est partagée avec des tiers, des annonceurs ou des fournisseurs d’analyse."
+            }
+          ]
+        },
+        {
+          "id": "security-retention",
+          "type": "section",
+          "heading": "SÉCURITÉ ET CONSERVATION DES DONNÉES",
+          "content": [
+            {
+              "type": "p",
+              "text": "Les données de vos projets et les réglages de l’application sont stockés de manière sécurisée sur votre appareil grâce aux mesures de sécurité standard d’iOS, d’iPadOS et de macOS. Les données restent sur votre appareil jusqu’à ce que vous supprimiez l’application ou effaciez manuellement le contenu."
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "type": "section",
+          "heading": "VOS DROITS EN MATIÈRE DE PROTECTION DES DONNÉES (RGPD / UK GDPR)",
+          "content": [
+            {
+              "type": "p",
+              "text": "En vertu du RGPD et du UK GDPR, vous disposez de droits tels que l’accès, la rectification et l’effacement. Comme nous n’avons pas accès à vos données, vous pouvez exercer ces droits directement :"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Droit d’accès et de portabilité :** Vous pouvez consulter toutes vos données directement dans l’application.",
+                "**Droit à l’effacement (droit à l’oubli) :** Vous pouvez supprimer des éléments individuels ou l’application entière pour effacer définitivement toutes les données.",
+                "**Droit d’opposition :** Vous pouvez mettre fin à tout traitement de données en fermant ou en supprimant simplement l’application."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "third-parties",
+          "type": "section",
+          "heading": "SERVICES TIERS",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear n’intègre aucun SDK tiers personnalisé de suivi, de publicité ou d’analyse, et n’utilise pas iCloud ni aucun autre service de synchronisation. Toutefois, comme l’application est distribuée via l’App Store d’Apple, le service natif suivant s’applique :"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Télémétrie de l’App Store :** Apple peut nous transmettre des rapports de plantage et des statistiques d’utilisation anonymisés et agrégés si vous avez autorisé Apple à partager ces informations avec les développeurs dans les réglages de confidentialité de votre appareil. Nous ne pouvons pas utiliser ces données pour identifier des utilisateurs individuels."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "type": "section",
+          "heading": "VIE PRIVÉE DES ENFANTS",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear ne s’adresse pas aux enfants de moins de 13 ans (ni à l’âge de consentement numérique applicable dans votre région). Comme l’application ne collecte aucune donnée personnelle, quel que soit l’âge de l’utilisateur, aucune donnée concernant des enfants n’est collectée, stockée ni transmise."
+            }
+          ]
+        },
+        {
+          "id": "disclaimer",
+          "type": "section",
+          "heading": "CLAUSE DE NON-RESPONSABILITÉ — INFORMATIONS FINANCIÈRES FOURNIES « EN L’ÉTAT »",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear est un outil personnel de planification de l’épargne fourni **« en l’état » et « selon la disponibilité »**, sans garantie d’aucune sorte, expresse ou implicite, y compris quant à l’exactitude, à la fiabilité ou à l’adéquation à un usage particulier. Les calculs, chronologies ou projections affichés dans l’application sont des estimations destinées uniquement à l’organisation personnelle et ne constituent pas un conseil financier, fiscal ou en investissement."
+            },
+            {
+              "type": "p",
+              "text": "Dans toute la mesure permise par la loi, Progressive Bytes ne saurait être tenue responsable des erreurs, inexactitudes ou omissions de l’application, ni des décisions prises ou des actions entreprises sur la base des informations qu’elle fournit."
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "type": "section",
+          "heading": "MODIFICATIONS DE CETTE POLITIQUE DE CONFIDENTIALITÉ",
+          "content": [
+            {
+              "type": "p",
+              "text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de « dernière mise à jour » actualisée. Comme l’application ne collecte aucune coordonnée, nous ne pouvons pas vous informer directement des modifications ; nous vous encourageons à consulter régulièrement cette page."
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "type": "trust",
+          "heading": "EN RÉSUMÉ",
+          "paragraphs": [
+            "**BudgetBear est une application qui place la confidentialité en premier. Vos données restent sur votre appareil et sous votre contrôle total.**",
+            "Nous ne collectons, ne stockons ni ne partageons aucune donnée personnelle. Il n’y a ni comptes, ni serveurs, ni suivi, que ce soit dans l’application ou sur ce site web."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "type": "section",
+          "heading": "CONTACT",
+          "content": [
+            {
+              "type": "p",
+              "text": "Si vous avez des questions sur cette politique de confidentialité ou sur la manière dont nous traitons les données, écrivez-nous à **contact@progressive-bytes.com**."
+            },
+            {
+              "type": "p",
+              "text": "En vertu du RGPD et du UK GDPR, le responsable du traitement est Progressive Bytes (Nils Anspach, Emsdettener Str. 10, 48268 Greven, Allemagne)."
+            },
+            {
+              "type": "p",
+              "text": "Vous avez également le droit d’introduire une réclamation auprès d’une autorité de protection des données (telle que l’Information Commissioner’s Office (ICO) au Royaume-Uni) si vous estimez que vos droits ont été violés."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

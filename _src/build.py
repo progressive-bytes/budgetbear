@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """Static site generator for the BudgetBear companion website.
 
-Run `python3 _src/build.py --help` for usage. Reads _src/config.json and _src/content/<lang>.json (checked
-against _src/schema/content.schema.json), renders them with _src/templates/ and _src/blocks.py and writes
-the HTML pages to the repo root (default language) and <lang>/ folders. Python 3 standard library only.
+Run `python3 _src/build.py --help` for usage. One command does the whole build: it validates the content
+(_src/content/<lang>.json against _src/schema/content.schema.json), copies the App Store badges and converts the
+screenshots into the language folders (see badges.py and screenshots.py), and then writes the HTML pages
+(_src/templates/ and _src/blocks.py) to the repo root (default language) and <lang>/ folders.
+Python 3 standard library only.
 """
 import argparse, json, os, re, sys
 from pathlib import Path
+from types import SimpleNamespace
 
 sys.dont_write_bytecode = True      # no __pycache__ folders in the repo
+import badges, screenshots, verify
 import blocks as B
 from validate import Validator, load_json, structure_problems
 
@@ -157,24 +161,48 @@ def parse_args():
     ap = argparse.ArgumentParser(
         prog="python3 _src/build.py",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description="Validate the website content and generate the pages.\n\n"
-                    "Without options the content is validated and all pages are (re)generated.",
+        description="Build the website: validate the content, copy the App Store badges, convert the screenshots and\n"
+                    "generate the pages. Only languages that have a content file are built.",
         epilog="examples:\n"
-               "  python3 _src/build.py                 validate and build all languages\n"
-               "  python3 _src/build.py --validate      validate only\n"
-               "  python3 _src/build.py -c              list pages that are out of date\n"
-               "  python3 _src/build.py --lang de       validate and build German only\n\n"
-               "input:  _src/config.json, _src/content/<lang>.json, _src/schema/content.schema.json, _src/templates/\n"
-               "output: HTML in the repo root (default language) and <lang>/ folders; never edit those by hand.\n"
+               "  python3 _src/build.py                 the whole build (the usual command)\n"
+               "  python3 _src/build.py --build-only    only validate and generate the pages, leave badges and screenshots alone\n"
+               "  python3 _src/build.py --validate      validate the content only\n"
+               "  python3 _src/build.py -c              show what a build would change, write nothing\n"
+               "  python3 _src/build.py --verify        the final check before uploading (read-only)\n"
+               "  python3 _src/build.py --lang de       build German only\n\n"
+               "input:  _src/config.json, _src/content/<lang>.json, _src/schema/content.schema.json, _src/templates/,\n"
+               "        the badge download (_src/badges.json) and the fastlane screenshots (_src/screenshots.json)\n"
+               "output: HTML pages and <language folder>/images/; never edit the generated files by hand.\n"
                "format: see _src/README.md")
     mode = ap.add_mutually_exclusive_group()
     mode.add_argument("--validate", action="store_true", help="validate the content only, write nothing")
     mode.add_argument("-c", "--check", action="store_true",
-                      help="validate, then list generated pages that are out of date; write nothing, exit code 1 if any")
+                      help="show what a build would change (badges, screenshots, pages); write nothing, exit code 1 if anything is to do")
+    mode.add_argument("--verify", action="store_true",
+                      help="final check before uploading: are all pages, badges, screenshots, links and switchers complete and correct? "
+                           "Read-only; exit code 1 if anything is wrong")
+    ap.add_argument("--build-only", action="store_true", help="skip the badges and screenshots, only validate and generate the pages")
+    ap.add_argument("--force", action="store_true", help="copy the badges and convert the screenshots again even if they are up to date")
     ap.add_argument("--lang", action="append", default=[], metavar="LANG",
-                    help="restrict validation and build to this language (repeatable); "
+                    help="restrict the build to this language (repeatable); "
                          "the default language is always read for the structure comparison")
     return ap.parse_args()
+
+
+def make_outputs(langs, data, only_selected):
+    """All generated files as {path: html}, in memory."""
+    tpl = (SRC / "templates" / "page.html").read_text(encoding="utf-8")
+    redir = (SRC / "templates" / "redirect.html").read_text(encoding="utf-8")
+    outputs = {}
+    for lg in langs:
+        for page in PAGES:
+            outputs[ROOT / (page_dir(lg) + page + ".html")] = build_page(lg, page, tpl, data)
+    if not only_selected:
+        for folder in CFG.get("redirect_folders", []):      # legacy URLs, e.g. /gb/
+            for page in PAGES:
+                target = BASE + page_path(DEFAULT, page)
+                outputs[ROOT / folder / (page + ".html")] = render(redir, {"url": target}, "templates/redirect.html")
+    return outputs
 
 
 def main():
@@ -205,18 +233,31 @@ def main():
     if validate_only:
         print(f"content valid: {', '.join(langs)}{pending}")
         return
+    if args.verify:
+        outputs = make_outputs(langs, data, bool(only))
+        sys.exit(verify.run(SimpleNamespace(root=ROOT, base=BASE, default=DEFAULT, active=LANGS, pending=PENDING, langs=langs, data=data,
+                                            outputs=outputs, page_dir=page_dir, page_path=page_path, cfg=CFG, all_langs=not only)))
+    print(f"content:     valid ({', '.join(langs)})")
 
-    tpl = (SRC / "templates" / "page.html").read_text(encoding="utf-8")
-    redir = (SRC / "templates" / "redirect.html").read_text(encoding="utf-8")
-    outputs = {}
-    for lg in langs:
-        for page in PAGES:
-            outputs[ROOT / (page_dir(lg) + page + ".html")] = build_page(lg, page, tpl, data)
-    if not only:
-        for folder in CFG.get("redirect_folders", []):      # legacy URLs, e.g. /gb/
-            for page in PAGES:
-                target = BASE + page_path(DEFAULT, page)
-                outputs[ROOT / folder / (page + ".html")] = render(redir, {"url": target}, "templates/redirect.html")
+    todo = 0                                  # things a build would still change (for --check)
+    asset_problems = 0
+    if not args.build_only:                   # badges and screenshots come first: the pages link to what exists
+        for label, step, verb, past in (("badges", badges, "copy", "copied"), ("screenshots", screenshots, "convert", "converted")):
+            r = step.sync(langs, force=args.force, dry_run=check)
+            if r["unavailable"]:
+                print(f"{label + ':':12} skipped, {r['unavailable']}")
+                continue
+            done = f"{len(r['changes'])} to {verb}" if check else f"{len(r['changes'])} {past}"
+            print(f"{label + ':':12} {done}, {r['skipped']} up to date" + (f", {len(r['problems'])} problem(s)" if r["problems"] else ""))
+            if check:
+                for c in r["changes"]:
+                    print("             would " + verb + " " + c)
+            for pr in r["problems"]:
+                print("warning:", pr)
+            todo += len(r["changes"]) if check else 0
+            asset_problems += len(r["problems"])
+
+    outputs = make_outputs(langs, data, bool(only))
 
     stale, problems = [], []
     for path, html in outputs.items():
@@ -231,8 +272,8 @@ def main():
     for p in problems:
         print("warning:", p)
     verb = "out of date" if check else "written"
-    print(f"{len(outputs)} pages, {len(stale)} {verb}" + ("" if not stale else ": " + ", ".join(str(p.relative_to(ROOT)) for p in stale)) + pending)
-    if check and stale:
+    print(f"{'pages:':12} {len(outputs)} pages, {len(stale)} {verb}" + ("" if not stale else ": " + ", ".join(str(p.relative_to(ROOT)) for p in stale)) + pending)
+    if (check and (stale or todo)) or asset_problems:
         sys.exit(1)
 
 
