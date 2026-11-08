@@ -172,7 +172,7 @@ def run(c):
     ck = R.check(f"content is valid ({', '.join(c.langs)})")
 
     ck = R.check("typographic apostrophes and quotation marks in the content")
-    straight = re.compile(r"(?<=[^\W\d_])'(?=[^\W\d_])|\"")
+    straight = re.compile(r"['\"]")                          # any straight quote is wrong, also after a bold marker or a digit
     def straight_quotes(x, path, lg):
         if isinstance(x, str):
             t = re.sub(r"\]\([^)]*\)", "", x)               # link URLs may contain anything
