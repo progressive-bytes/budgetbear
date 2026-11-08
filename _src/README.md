@@ -37,7 +37,7 @@ An invalid content file stops the build with the exact location of each problem.
 
 ## Languages (`config.json`)
 
-`languages` lists every language the website is planned to have, in switcher order. An entry has:
+`languages` lists every language the website is planned to have, in switcher order, which is alphabetical by language code. An entry has:
 
 - `code`: the language tag (`en`, `de`, `zh-Hans`). It is used for `<html lang>`, hreflang and the content file name `content/<code>.json`.
 - `dir` (optional, default = `code`): the URL folder, which also holds the language's `images/` folder, **taken from the URL infix in the App Store

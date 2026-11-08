@@ -2,8 +2,8 @@
   "base_url": "https://www.progressive-bytes.com/budgetbear/",
   "default_language": "en",
   "languages": [
-    {"code": "en", "source_locale": "en-US"},
     {"code": "de", "source_locale": "de-DE"},
+    {"code": "en", "source_locale": "en-US"},
     {"code": "es", "source_locale": "es-ES"},
     {"code": "fr", "source_locale": "fr-FR"},
     {"code": "it", "source_locale": "it"},
