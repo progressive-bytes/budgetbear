@@ -171,6 +171,23 @@ def run(c):
 
     ck = R.check(f"content is valid ({', '.join(c.langs)})")
 
+    ck = R.check("typographic apostrophes and quotation marks in the content")
+    straight = re.compile(r"(?<=[^\W\d_])'(?=[^\W\d_])|\"")
+    def straight_quotes(x, path, lg):
+        if isinstance(x, str):
+            t = re.sub(r"\]\([^)]*\)", "", x)               # link URLs may contain anything
+            m = straight.search(t)
+            if m:
+                ck["errors"].append(f"{lg}: {path}: straight quote ({m.group(0)}) in text, use ’ or “ ” ({t[max(0, m.start() - 15):m.end() + 15]!r})")
+        elif isinstance(x, list):
+            for i, v in enumerate(x):
+                straight_quotes(v, f"{path}/{i}", lg)
+        elif isinstance(x, dict):
+            for k, v in x.items():
+                straight_quotes(v, f"{path}/{k}", lg)
+    for lg in c.langs:
+        straight_quotes(c.data[lg], "", lg)
+
     # ---- languages and files
     ck = R.check("every language has its pages, and the pages are current")
     if c.all_langs:

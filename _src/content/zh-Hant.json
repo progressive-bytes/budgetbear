@@ -1,0 +1,450 @@
+{
+  "name": "繁體中文",
+  "tagline": "你的私密儲蓄追蹤與目標規劃工具",
+  "icon_alt": "BudgetBear 圖示",
+  "nav": {
+    "home": "首頁",
+    "privacy": "隱私權",
+    "contact": "聯絡我們"
+  },
+  "copyright": "© 2026 Progressive Bytes. 保留一切權利。",
+  "badge_file": "Download_on_the_App_Store_Badge_CNTC_RGB_blk_100217.svg",
+  "badge_alt": "App Store 下載",
+  "currency": "TWD",
+  "contact": {
+    "phone_label": "電話：",
+    "email_label": "電子郵件：",
+    "country": "德國"
+  },
+  "pages": {
+    "index": {
+      "title": "BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具 — 無訂閱。無追蹤器。無自訂帳號。",
+      "og_title": "BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具",
+      "description": "BudgetBear 是適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤 App。為目標排好優先順序並規劃存款，就能把願望清單變成時間軸——BudgetBear 會準確計算出你什麼時候買得起每一件物品。無訂閱，無追蹤器，無自訂帳號。",
+      "og_description": "BudgetBear 是適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤 App。為目標排好優先順序並規劃存款，就能把願望清單變成時間軸——BudgetBear 會準確計算出你什麼時候買得起每一件物品。無訂閱，無追蹤器，無自訂帳號。",
+      "keywords": "儲蓄追蹤, 專項儲備金, 目標規劃, 願望清單 App, 購物規劃, 預算 App, 儲蓄目標, 財務規劃, 優先順序清單, 離線, 私密, iPhone, iPad, Mac",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "精準掌握何時可以購買",
+          "subtitle": "為儲蓄目標排好優先順序，了解每件物品最早什麼時候買得起。簡單、私密的規劃，自動產生購買時間軸。無需帳號。",
+          "screenshots": [
+            {
+              "name": "Projects",
+              "alt": "BudgetBear 專案"
+            },
+            {
+              "name": "ProjectGoals",
+              "alt": "BudgetBear 專案目標"
+            }
+          ]
+        },
+        {
+          "id": "intro",
+          "type": "section",
+          "divider": false,
+          "content": [
+            {
+              "type": "p",
+              "text": "**別再猜測什麼時候才能買到清單上的下一件東西。** BudgetBear 是一款簡單、私密的 App，能把你的目標變成清晰的購買時間軸。新增目標、設定優先順序、規劃存款——一切都在一個寧靜、簡潔、尊重你隱私的介面中完成。"
+            }
+          ]
+        },
+        {
+          "id": "download",
+          "type": "download",
+          "text": "準備好開始規劃你的購物了嗎？今天就下載 BudgetBear。"
+        },
+        {
+          "id": "why-choose",
+          "type": "section",
+          "heading": "為什麼選擇 BudgetBear",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**100% 私密，由你掌控** — 你的財務資料只儲存在你的裝置上。沒有自訂帳號，沒有第三方伺服器，也無需雲端註冊——永遠如此。",
+                "**極簡而專注** — 快速、易用的介面，專注於把事情做好。沒有雜亂，沒有不必要的複雜性。",
+                "**精準掌握何時可以購買** — BudgetBear 會算出你最早什麼時候買得起每個目標，讓你不必再靠猜。",
+                "**以優先順序為核心** — 把你的優先順序與已規劃的存提款結合起來，將儲蓄計畫變成每個目標切實可行的購買日期。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase-date",
+          "type": "feature",
+          "heading": "把優先順序變成購買日期",
+          "intro": "透過這套以清晰為核心的系統，全面掌控你的長期消費與儲蓄目標。",
+          "screenshot": {
+            "name": "ProjectPayments",
+            "alt": "BudgetBear 專案存提款"
+          },
+          "items": [
+            {
+              "title": "依優先順序排列的願望清單",
+              "text": "新增附有預估價格的目標物品（目標），並拖曳成你想要的先後順序。"
+            },
+            {
+              "title": "動態時間軸計算",
+              "text": "調整價格、新增存款或重新排序目標時，購買日期會即時更新。"
+            },
+            {
+              "title": "靈活的資金流動",
+              "text": "新增一次性存款來補足預算；如果決定把錢挪作他用，也可以記錄提款。"
+            },
+            {
+              "title": "排程存提款",
+              "text": "設定有期限的定期存款或提款排程（例如每個第 2 個星期二或發薪日），讓時間軸自動運作。"
+            }
+          ]
+        },
+        {
+          "id": "key-features",
+          "type": "section",
+          "heading": "儲蓄目標的核心功能",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**依優先順序排列的儲蓄專案** — 將相關目標歸入專屬專案，例如旅行、電子產品、居家升級或緊急預備金。",
+                "**智慧分配** — 資金會自動優先撥給優先順序最高的目標，直到該目標資金充足，再順延到下一個。",
+                "**簡潔極簡** — 介面清爽、無干擾，方便快速輸入，沒有多餘的花俏功能，也沒有複雜的選單。",
+                "**有期限的定期排程** — 設定開始日期、結束日期與間隔，輕鬆安排定期投入，無需複雜規則。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-cases",
+          "type": "feature",
+          "heading": "多種儲蓄使用情境",
+          "intro": "從專項儲備金到大額購買，BudgetBear 都能適應你的目標。",
+          "reverse": true,
+          "screenshot": {
+            "name": "ProjectDetails",
+            "alt": "深色模式下的 BudgetBear 專案詳細資訊：標題、貨幣、預算和餘額",
+            "dark": true
+          },
+          "items": [
+            {
+              "title": "專項儲備金",
+              "text": "為已知的未來支出預留資金，例如保險費、節慶購物或車輛保養。"
+            },
+            {
+              "title": "依優先順序排列的願望清單",
+              "text": "整理接下來想買的物品，看看新增一筆存款能讓購買日期提前多少。"
+            },
+            {
+              "title": "大額購買",
+              "text": "把大額購買拆成可負擔的定期投入，看著時間軸一點一點縮短。"
+            }
+          ]
+        },
+        {
+          "id": "private-by-design",
+          "type": "trust",
+          "variant": "feature",
+          "heading": "以隱私為核心的設計",
+          "emphasis": "無訂閱。無追蹤器。無自訂帳號。",
+          "paragraphs": [
+            "BudgetBear 將一切都保存在本機——不會上傳、同步或與任何人分享。你的目標與預算詳細資料絕不會離開你的裝置。",
+            "可免費開始使用，最多 3 個專案。一次性升級 Pro 即可解鎖不限數量的專案——永遠無需訂閱。"
+          ]
+        },
+        {
+          "id": "clear-effective",
+          "type": "section",
+          "heading": "清晰高效",
+          "content": [
+            {
+              "type": "p",
+              "text": "無論你是在為假期存錢、為新裝置存錢，還是在建立緊急預備金，BudgetBear 都是你可靠的夥伴，幫你把儲蓄目標變成具體的購買日期。簡單、私密，無需訂閱。"
+            },
+            {
+              "type": "p",
+              "text": "最好的效率工具不會礙事，讓你能夠專注。BudgetBear 就是這樣——沒有不必要的功能，沒有令人眼花撩亂的介面，只有一條清晰的目標時間軸。"
+            }
+          ]
+        },
+        {
+          "id": "final-cta",
+          "type": "final_cta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "聯絡我們 – BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具",
+      "og_title": "聯絡我們 — BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具",
+      "description": "如需 BudgetBear 的支援、功能建議或錯誤回報，請聯絡 Progressive Bytes。",
+      "og_description": "BudgetBear 支援 – 你的私密儲蓄追蹤與目標規劃工具。我們很期待聽到你的聲音！",
+      "keywords": "聯絡我們, 支援, 意見回饋, 錯誤回報, 功能建議",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "聯絡我們",
+          "subtitle": "我們隨時樂意幫忙。"
+        },
+        {
+          "id": "get-in-touch",
+          "type": "section",
+          "heading": "與我們聯絡",
+          "content": [
+            {
+              "type": "p",
+              "text": "有問題、意見或功能建議嗎？歡迎與我們聯絡，我們會盡快回覆你。"
+            },
+            {
+              "type": "contact_box"
+            }
+          ]
+        },
+        {
+          "id": "report-bug",
+          "type": "section",
+          "heading": "回報錯誤或提出功能建議",
+          "content": [
+            {
+              "type": "p",
+              "text": "為了讓我們更妥善地協助你，請在聯絡我們時附上以下資訊："
+            },
+            {
+              "type": "list",
+              "items": [
+                "裝置型號",
+                "iOS、iPadOS 或 macOS 版本",
+                "App 版本",
+                "問題或功能建議的說明",
+                "如有需要，請附上螢幕截圖"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "type": "trust",
+          "variant": "last",
+          "heading": "我們重視你的意見回饋",
+          "paragraphs": [
+            "無論是錯誤回報、功能建議，還是一句簡單的問候，你的意見都有助於讓 BudgetBear 對所有人更好用。"
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "隱私權政策 – BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具",
+      "og_title": "隱私權政策 — BudgetBear | 適用於 iPhone、iPad 和 Mac 的私密儲蓄追蹤與目標規劃工具",
+      "description": "BudgetBear 隱私權政策。了解我們如何保護你的資料。",
+      "og_description": "無訂閱。無追蹤器。無自訂帳號——只有你的資料，由你掌控",
+      "keywords": "隱私權政策, GDPR, 資料保護",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "隱私權政策",
+          "subtitle": "最後更新：2026年11月1日"
+        },
+        {
+          "id": "overview",
+          "type": "section",
+          "heading": "概述",
+          "content": [
+            {
+              "type": "p",
+              "text": "Progressive Bytes（「我們」）營運 BudgetBear 行動應用程式，以及位於 {site_link} 的配套網站（統稱「服務」）。本隱私權政策同時適用於該 App 和該網站。"
+            },
+            {
+              "type": "p",
+              "text": "本頁面向你說明，在你使用我們的服務時，我們在蒐集、使用和揭露個人資料方面的政策。我們承諾透過 **隱私設計（Privacy by Design）** 來保護你的隱私。"
+            }
+          ]
+        },
+        {
+          "id": "legal-basis",
+          "type": "section",
+          "heading": "資料處理的法律依據（GDPR / UK GDPR）",
+          "content": [
+            {
+              "type": "p",
+              "text": "如果你位於歐洲經濟區（EEA）或英國，我們對你的資料進行「處理」（僅在你的裝置本機進行）的法律依據是 **GDPR / UK GDPR 第 6 條第 1 項(b)款**：處理對於履行契約是必要的（提供你所需要的儲蓄追蹤功能）。"
+            },
+            {
+              "type": "p",
+              "text": "對於網站伺服器記錄檔，法律依據是 **GDPR / UK GDPR 第 6 條第 1 項(f)款**：為營運一個正常運作且安全的網站而具有的正當利益。"
+            }
+          ]
+        },
+        {
+          "id": "app-data",
+          "type": "section",
+          "heading": "App — 我們蒐集的資訊",
+          "content": [
+            {
+              "type": "p",
+              "text": "**我們不蒐集任何個人資訊。**"
+            },
+            {
+              "type": "p",
+              "text": "BudgetBear 的設計使其完全在你的裝置上運作，無需蒐集任何個人資料，無需帳號，也無需伺服器。不存在任何形式的同步——你的資料絕不會離開你的裝置。你的專案、儲蓄目標、存提款資訊和 App 設定，都只屬於你。"
+            },
+            {
+              "type": "h3",
+              "text": "儲存在本機的資料："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**專案資料：** 你建立的所有專案、儲蓄目標、存提款資訊及相關資料均儲存在你的裝置本機。",
+                "**App 設定：** 所有 App 設定均儲存在你的裝置本機。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "website-data",
+          "type": "section",
+          "heading": "網站 — 我們蒐集的資訊",
+          "content": [
+            {
+              "type": "p",
+              "text": "本網站託管於 GitHub Pages，由少量靜態 HTML 頁面和樣式表組成——沒有資料庫，沒有伺服器端程式碼，也沒有任何形式的使用者帳號。我們不使用 Cookie、追蹤器或分析工具。我們不蒐集訪客的任何個人資訊。"
+            },
+            {
+              "type": "p",
+              "text": "與任何網路伺服器一樣，當你造訪本網站時，GitHub Pages 會自動記錄基本的伺服器記錄檔。這些記錄檔可能包括你的 IP 位址、瀏覽器類型、來源頁面以及造訪的日期和時間。這些資料由 GitHub 依照其[隱私權聲明](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)保留。我們無法存取個別訪客的記錄檔，也不會將這些資料用於追蹤或建立個人檔案。"
+            }
+          ]
+        },
+        {
+          "id": "sharing",
+          "type": "section",
+          "heading": "資料分享與揭露",
+          "content": [
+            {
+              "type": "p",
+              "text": "**我們不會分享、出售或分析你的資料。**"
+            },
+            {
+              "type": "p",
+              "text": "由於所有 App 資料都保留在你的裝置上，並且我們不蒐集個人資訊，因此不會向第三方、廣告商或分析服務供應商分享任何資料。"
+            }
+          ]
+        },
+        {
+          "id": "security-retention",
+          "type": "section",
+          "heading": "資料安全與保留",
+          "content": [
+            {
+              "type": "p",
+              "text": "你的專案資料和 App 設定透過標準的 iOS、iPadOS 和 macOS 安全措施安全地儲存在你的裝置上。資料會一直保留在你的裝置上，直到你刪除 App 或手動移除內容。"
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "type": "section",
+          "heading": "你的資料保護權利（GDPR / UK GDPR）",
+          "content": [
+            {
+              "type": "p",
+              "text": "根據 GDPR 和 UK GDPR，你享有包括存取、更正和刪除在內的權利。由於我們無法存取你的資料，你可以直接自行行使這些權利："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**存取／可攜權：** 你可以在 App 內檢視你的所有資料。",
+                "**刪除權（被遺忘權）：** 你可以刪除個別項目，或刪除整個 App，以永久清除所有資料。",
+                "**反對權：** 你只需關閉或刪除 App，即可停止所有資料處理。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "third-parties",
+          "type": "section",
+          "heading": "第三方服務",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 不整合任何自行加入的第三方追蹤、廣告或分析 SDK，也不使用 iCloud 或任何其他同步服務。不過，由於該 App 透過 Apple 的 App Store 發行，因此適用以下原生服務："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**App Store 遙測資料：** 如果你在裝置的隱私權設定中允許 Apple 與開發者分享此類資訊，Apple 可能會與我們分享經過匿名化和彙總的當機報告及使用統計資料。我們無法使用這些資料來識別個別使用者。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "type": "section",
+          "heading": "兒童隱私權",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 不以 13 歲以下（或你所在地區的數位同意年齡以下）的兒童為對象。由於該 App 不蒐集任何人的個人資訊，無論年齡大小，因此不會蒐集、儲存或傳輸任何有關兒童的資料。"
+            }
+          ]
+        },
+        {
+          "id": "disclaimer",
+          "type": "section",
+          "heading": "免責聲明 — 財務資訊依「現況」提供",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 是一款個人儲蓄規劃工具，依**「現況」及「可用狀態」**提供，不附帶任何明示或默示的保證，包括關於準確性、可靠性或特定用途適用性的保證。App 中顯示的任何計算結果、時間軸或預測都只是用於個人整理的估算，不構成財務、稅務或投資建議。"
+            },
+            {
+              "type": "p",
+              "text": "在法律允許的最大範圍內，對於 App 中的任何錯誤、不準確或遺漏，或因依賴 App 提供的資訊而作出的任何決定或採取的任何行動，Progressive Bytes 概不承擔責任。"
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "type": "section",
+          "heading": "本隱私權政策的變更",
+          "content": [
+            {
+              "type": "p",
+              "text": "我們可能會不時更新本隱私權政策。任何變更都將發布在此頁面上，並更新「最後更新」日期。由於 App 不蒐集聯絡資訊，我們無法直接通知你相關變更——建議你定期查看此頁面。"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "type": "trust",
+          "heading": "摘要",
+          "paragraphs": [
+            "**BudgetBear 是一款隱私至上的 App。你的資料保留在你的裝置上，完全由你掌控。**",
+            "我們不蒐集、儲存或分享任何個人資訊。無論在 App 中還是在本網站上，都沒有帳號、沒有伺服器，也沒有追蹤。"
+          ]
+        },
+        {
+          "id": "contact-us",
+          "type": "section",
+          "heading": "聯絡我們",
+          "content": [
+            {
+              "type": "p",
+              "text": "如果你對本隱私權政策或我們處理資料的方式有任何疑問，請透過 **contact@progressive-bytes.com** 與我們聯絡。"
+            },
+            {
+              "type": "p",
+              "text": "根據 GDPR 和 UK GDPR，資料控管者為 Progressive Bytes（Nils Anspach, Emsdettener Str. 10, 48268 Greven, 德國）。"
+            },
+            {
+              "type": "p",
+              "text": "如果你認為你的權利受到了侵害，你也有權向資料保護機關（例如英國的資訊專員辦公室（ICO））提出申訴。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

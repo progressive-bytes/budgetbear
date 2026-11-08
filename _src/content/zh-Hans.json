@@ -1,0 +1,450 @@
+{
+  "name": "简体中文",
+  "tagline": "你的私密储蓄追踪与目标规划工具",
+  "icon_alt": "BudgetBear 图标",
+  "nav": {
+    "home": "首页",
+    "privacy": "隐私",
+    "contact": "联系我们"
+  },
+  "copyright": "© 2026 Progressive Bytes. 保留所有权利。",
+  "badge_file": "Download_on_the_App_Store_Badge_CNSC_RGB_blk_092917.svg",
+  "badge_alt": "App Store 下载",
+  "currency": "CNY",
+  "contact": {
+    "phone_label": "电话：",
+    "email_label": "电子邮件：",
+    "country": "德国"
+  },
+  "pages": {
+    "index": {
+      "title": "BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具 — 无订阅。无追踪器。无自建账户。",
+      "og_title": "BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具",
+      "description": "BudgetBear 是适用于 iPhone、iPad 和 Mac 的私密储蓄追踪应用。为目标排好优先级并规划存款，就能把心愿清单变成时间线——BudgetBear 会准确计算出你什么时候买得起每一件物品。无订阅，无追踪器，无自建账户。",
+      "og_description": "BudgetBear 是适用于 iPhone、iPad 和 Mac 的私密储蓄追踪应用。为目标排好优先级并规划存款，就能把心愿清单变成时间线——BudgetBear 会准确计算出你什么时候买得起每一件物品。无订阅，无追踪器，无自建账户。",
+      "keywords": "储蓄追踪, 专项储备金, 目标规划, 心愿清单应用, 购物规划, 预算应用, 储蓄目标, 财务规划, 优先级清单, 离线, 私密, iPhone, iPad, Mac",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "准确掌握何时可以购买",
+          "subtitle": "为储蓄目标排好优先级，了解每件物品最早什么时候买得起。简单、私密的规划，自动生成购买时间线。无需账户。",
+          "screenshots": [
+            {
+              "name": "Projects",
+              "alt": "BudgetBear 项目"
+            },
+            {
+              "name": "ProjectGoals",
+              "alt": "BudgetBear 项目目标"
+            }
+          ]
+        },
+        {
+          "id": "intro",
+          "type": "section",
+          "divider": false,
+          "content": [
+            {
+              "type": "p",
+              "text": "**别再猜测什么时候才能买到清单上的下一件东西。** BudgetBear 是一款简单、私密的应用，能把你的目标变成清晰的购买时间线。添加目标、设定优先级、规划存款——一切都在一个宁静、简洁、尊重你隐私的界面中完成。"
+            }
+          ]
+        },
+        {
+          "id": "download",
+          "type": "download",
+          "text": "准备好开始规划你的购物了吗？今天就下载 BudgetBear。"
+        },
+        {
+          "id": "why-choose",
+          "type": "section",
+          "heading": "为什么选择 BudgetBear",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**100% 私密，由你掌控** — 你的财务数据只保存在你的设备上。没有自建账户，没有第三方服务器，也无需云端注册——永远如此。",
+                "**极简而专注** — 快速、易用的界面，专注于把事情做好。没有杂乱，没有不必要的复杂性。",
+                "**准确掌握何时可以购买** — BudgetBear 会算出你最早什么时候买得起每个目标，让你不必再靠猜。",
+                "**以优先级为核心** — 把你的优先级与已计划的存取款结合起来，将储蓄计划变成每个目标切实可行的购买日期。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase-date",
+          "type": "feature",
+          "heading": "把优先级变成购买日期",
+          "intro": "借助这套以清晰为核心的系统，全面掌控你的长期消费与储蓄目标。",
+          "screenshot": {
+            "name": "ProjectPayments",
+            "alt": "BudgetBear 项目存取款"
+          },
+          "items": [
+            {
+              "title": "按优先级排序的心愿清单",
+              "text": "添加带有预估价格的目标物品（目标），并拖动到你想要的先后顺序。"
+            },
+            {
+              "title": "动态时间线计算",
+              "text": "调整价格、添加存款或重新排序目标时，购买日期会即时更新。"
+            },
+            {
+              "title": "灵活的资金流动",
+              "text": "添加一次性存款来补足预算；如果决定把钱挪作他用，也可以记录取款。"
+            },
+            {
+              "title": "定期存取款",
+              "text": "设置有限期的定期存款或取款计划（例如每个第 2 个星期二或发薪日），让时间线自动运转。"
+            }
+          ]
+        },
+        {
+          "id": "key-features",
+          "type": "section",
+          "heading": "储蓄目标的核心功能",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**按优先级排序的储蓄项目** — 把相关目标归入专属项目，例如旅行、电子产品、家居升级或应急储备。",
+                "**智能分配** — 资金会自动优先拨给优先级最高的目标，直到该目标资金充足，再顺延到下一个。",
+                "**简洁极简** — 界面清爽、无干扰，便于快速录入，没有多余的花哨功能，也没有复杂的菜单。",
+                "**有限期的定期计划** — 设置开始日期、结束日期和间隔，轻松安排定期投入，无需复杂规则。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-cases",
+          "type": "feature",
+          "heading": "多种储蓄使用场景",
+          "intro": "从专项储备金到大额购买，BudgetBear 都能适应你的目标。",
+          "reverse": true,
+          "screenshot": {
+            "name": "ProjectDetails",
+            "alt": "深色模式下的 BudgetBear 项目详情：标题、货币、预算和余额",
+            "dark": true
+          },
+          "items": [
+            {
+              "title": "专项储备金",
+              "text": "为已知的未来开支预留资金，例如保险费、节日购物或车辆保养。"
+            },
+            {
+              "title": "按优先级排序的心愿清单",
+              "text": "整理接下来想买的物品，看看新增一笔存款能让购买日期提前多少。"
+            },
+            {
+              "title": "大额购买",
+              "text": "把大额购买拆分成可负担的定期投入，看着时间线一点点缩短。"
+            }
+          ]
+        },
+        {
+          "id": "private-by-design",
+          "type": "trust",
+          "variant": "feature",
+          "heading": "隐私至上的设计",
+          "emphasis": "无订阅。无追踪器。无自建账户。",
+          "paragraphs": [
+            "BudgetBear 将一切都保存在本地——不会上传、同步或与任何人共享。你的目标和预算详情绝不会离开你的设备。",
+            "可免费开始使用，最多 3 个项目。一次性升级 Pro 即可解锁不限数量的项目——永远无需订阅。"
+          ]
+        },
+        {
+          "id": "clear-effective",
+          "type": "section",
+          "heading": "清晰高效",
+          "content": [
+            {
+              "type": "p",
+              "text": "无论你是在为假期攒钱、为新设备存钱，还是在建立应急基金，BudgetBear 都是你可靠的伙伴，帮你把储蓄目标变成具体的购买日期。简单、私密，无需订阅。"
+            },
+            {
+              "type": "p",
+              "text": "最好的效率工具不会碍事，让你能够专注。BudgetBear 就是这样——没有不必要的功能，没有令人眼花缭乱的界面，只有一条清晰的目标时间线。"
+            }
+          ]
+        },
+        {
+          "id": "final-cta",
+          "type": "final_cta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "联系我们 – BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具",
+      "og_title": "联系我们 — BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具",
+      "description": "如需 BudgetBear 的支持、功能建议或错误报告，请联系 Progressive Bytes。",
+      "og_description": "BudgetBear 支持 – 你的私密储蓄追踪与目标规划工具。我们很期待听到你的声音！",
+      "keywords": "联系我们, 支持, 反馈, 错误报告, 功能建议",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "联系我们",
+          "subtitle": "我们随时乐意帮忙。"
+        },
+        {
+          "id": "get-in-touch",
+          "type": "section",
+          "heading": "与我们联系",
+          "content": [
+            {
+              "type": "p",
+              "text": "有问题、反馈或功能建议吗？欢迎联系我们，我们会尽快回复你。"
+            },
+            {
+              "type": "contact_box"
+            }
+          ]
+        },
+        {
+          "id": "report-bug",
+          "type": "section",
+          "heading": "报告错误或提出功能建议",
+          "content": [
+            {
+              "type": "p",
+              "text": "为了让我们更好地帮助你，请在联系我们时附上以下信息："
+            },
+            {
+              "type": "list",
+              "items": [
+                "设备型号",
+                "iOS、iPadOS 或 macOS 版本",
+                "App 版本",
+                "问题或功能建议的描述",
+                "如有需要，请附上截图"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "type": "trust",
+          "variant": "last",
+          "heading": "我们重视你的反馈",
+          "paragraphs": [
+            "无论是错误报告、功能建议，还是一句简单的问候，你的意见都有助于让 BudgetBear 对所有人更好用。"
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "隐私政策 – BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具",
+      "og_title": "隐私政策 — BudgetBear | 适用于 iPhone、iPad 和 Mac 的私密储蓄追踪与目标规划工具",
+      "description": "BudgetBear 隐私政策。了解我们如何保护你的数据。",
+      "og_description": "无订阅。无追踪器。无自建账户——只有你的数据，由你掌控",
+      "keywords": "隐私政策, GDPR, 数据保护",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "隐私政策",
+          "subtitle": "最后更新：2026年11月1日"
+        },
+        {
+          "id": "overview",
+          "type": "section",
+          "heading": "概述",
+          "content": [
+            {
+              "type": "p",
+              "text": "Progressive Bytes（“我们”）运营 BudgetBear 移动应用以及位于 {site_link} 的配套网站（统称“服务”）。本隐私政策同时适用于该应用和该网站。"
+            },
+            {
+              "type": "p",
+              "text": "本页面向你说明，在你使用我们的服务时，我们在收集、使用和披露个人数据方面的政策。我们承诺通过 **隐私设计（Privacy by Design）** 来保护你的隐私。"
+            }
+          ]
+        },
+        {
+          "id": "legal-basis",
+          "type": "section",
+          "heading": "数据处理的法律依据（GDPR / UK GDPR）",
+          "content": [
+            {
+              "type": "p",
+              "text": "如果你位于欧洲经济区（EEA）或英国，我们对你的数据进行“处理”（仅在你的设备本地进行）的法律依据是 **GDPR / UK GDPR 第 6 条第 1 款(b)项**：处理对于履行合同是必要的（提供你所需要的储蓄追踪功能）。"
+            },
+            {
+              "type": "p",
+              "text": "对于网站服务器日志，法律依据是 **GDPR / UK GDPR 第 6 条第 1 款(f)项**：为运营一个正常运行且安全的网站而具有的合法利益。"
+            }
+          ]
+        },
+        {
+          "id": "app-data",
+          "type": "section",
+          "heading": "应用 — 我们收集的信息",
+          "content": [
+            {
+              "type": "p",
+              "text": "**我们不收集任何个人信息。**"
+            },
+            {
+              "type": "p",
+              "text": "BudgetBear 的设计使其完全在你的设备上运行，无需收集任何个人数据，无需账户，也无需服务器。不存在任何形式的同步——你的数据绝不会离开你的设备。你的项目、储蓄目标、存取款信息和应用设置，都只属于你。"
+            },
+            {
+              "type": "h3",
+              "text": "本地存储的数据："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**项目数据：** 你创建的所有项目、储蓄目标、存取款信息及相关数据均存储在你的设备本地。",
+                "**应用设置：** 所有应用设置均存储在你的设备本地。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "website-data",
+          "type": "section",
+          "heading": "网站 — 我们收集的信息",
+          "content": [
+            {
+              "type": "p",
+              "text": "本网站托管在 GitHub Pages 上，由少量静态 HTML 页面和样式表组成——没有数据库，没有服务器端代码，也没有任何形式的用户账户。我们不使用 Cookie、追踪器或分析工具。我们不收集访客的任何个人信息。"
+            },
+            {
+              "type": "p",
+              "text": "与任何网络服务器一样，当你访问本网站时，GitHub Pages 会自动记录基本的服务器日志。这些日志可能包括你的 IP 地址、浏览器类型、来源页面以及访问的日期和时间。这些数据由 GitHub 按照其[隐私声明](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)保留。我们无法访问单个访客的日志，也不会将这些数据用于追踪或画像。"
+            }
+          ]
+        },
+        {
+          "id": "sharing",
+          "type": "section",
+          "heading": "数据共享与披露",
+          "content": [
+            {
+              "type": "p",
+              "text": "**我们不会共享、出售或分析你的数据。**"
+            },
+            {
+              "type": "p",
+              "text": "由于所有应用数据都保留在你的设备上，并且我们不收集个人信息，因此不会向第三方、广告商或分析服务提供商共享任何数据。"
+            }
+          ]
+        },
+        {
+          "id": "security-retention",
+          "type": "section",
+          "heading": "数据安全与保留",
+          "content": [
+            {
+              "type": "p",
+              "text": "你的项目数据和应用设置通过标准的 iOS、iPadOS 和 macOS 安全措施安全地存储在你的设备上。数据会一直保留在你的设备上，直到你删除应用或手动移除内容。"
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "type": "section",
+          "heading": "你的数据保护权利（GDPR / UK GDPR）",
+          "content": [
+            {
+              "type": "p",
+              "text": "根据 GDPR 和 UK GDPR，你享有包括访问、更正和删除在内的权利。由于我们无法访问你的数据，你可以直接自行行使这些权利："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**访问/可携带权：** 你可以在应用内查看你的所有数据。",
+                "**删除权（被遗忘权）：** 你可以删除单个项目，或删除整个应用，以永久清除所有数据。",
+                "**反对权：** 你只需关闭或删除应用，即可停止所有数据处理。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "third-parties",
+          "type": "section",
+          "heading": "第三方服务",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 不集成任何自行添加的第三方追踪、广告或分析 SDK，也不使用 iCloud 或任何其他同步服务。不过，由于该应用通过 Apple 的 App Store 分发，因此适用以下原生服务："
+            },
+            {
+              "type": "list",
+              "items": [
+                "**App Store 遥测数据：** 如果你在设备的隐私设置中允许 Apple 与开发者共享此类信息，Apple 可能会与我们共享经过匿名化和汇总的崩溃报告及使用统计数据。我们无法使用这些数据来识别单个用户。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "type": "section",
+          "heading": "儿童隐私",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 不面向 13 岁以下（或你所在地区的数字同意年龄以下）的儿童。由于该应用不收集任何人的个人信息，无论年龄大小，因此不会收集、存储或传输任何有关儿童的数据。"
+            }
+          ]
+        },
+        {
+          "id": "disclaimer",
+          "type": "section",
+          "heading": "免责声明 — 财务信息按“现状”提供",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear 是一款个人储蓄规划工具，按**“现状”和“可用状态”**提供，不附带任何明示或暗示的保证，包括关于准确性、可靠性或特定用途适用性的保证。应用中显示的任何计算结果、时间线或预测都只是用于个人整理的估算，不构成财务、税务或投资建议。"
+            },
+            {
+              "type": "p",
+              "text": "在法律允许的最大范围内，对于应用中的任何错误、不准确或遗漏，或因依赖应用提供的信息而作出的任何决定或采取的任何行动，Progressive Bytes 概不承担责任。"
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "type": "section",
+          "heading": "本隐私政策的变更",
+          "content": [
+            {
+              "type": "p",
+              "text": "我们可能会不时更新本隐私政策。任何变更都将发布在此页面上，并更新“最后更新”日期。由于应用不收集联系信息，我们无法直接通知你相关变更——建议你定期查看此页面。"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "type": "trust",
+          "heading": "摘要",
+          "paragraphs": [
+            "**BudgetBear 是一款隐私至上的应用。你的数据保留在你的设备上，完全由你掌控。**",
+            "我们不收集、存储或共享任何个人信息。无论在应用中还是在本网站上，都没有账户、没有服务器、也没有追踪。"
+          ]
+        },
+        {
+          "id": "contact-us",
+          "type": "section",
+          "heading": "联系我们",
+          "content": [
+            {
+              "type": "p",
+              "text": "如果你对本隐私政策或我们处理数据的方式有任何疑问，请通过 **contact@progressive-bytes.com** 联系我们。"
+            },
+            {
+              "type": "p",
+              "text": "根据 GDPR 和 UK GDPR，数据控制者为 Progressive Bytes（Nils Anspach, Emsdettener Str. 10, 48268 Greven, 德国）。"
+            },
+            {
+              "type": "p",
+              "text": "如果你认为你的权利受到了侵犯，你也有权向数据保护机构（例如英国的信息专员办公室（ICO））提出投诉。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

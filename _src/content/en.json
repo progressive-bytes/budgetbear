@@ -66,7 +66,7 @@
               "items": [
                 "**100% Private & Your Control** — Your financial data stays exclusively on your device. No custom accounts, no third-party servers, and no cloud sign-ups — ever.",
                 "**Minimal & Focused** — Fast, easy-to-use interface focused on getting things done. No clutter, no unnecessary complexity.",
-                "**Know Exactly When You Can Buy** — BudgetBear works out the soonest you can afford each goal, so you're never guessing.",
+                "**Know Exactly When You Can Buy** — BudgetBear works out the soonest you can afford each goal, so you’re never guessing.",
                 "**Built Around Priorities** — Combine your priorities with your planned payments to turn your savings plan into a realistic purchase date for every goal."
               ]
             }
@@ -160,11 +160,11 @@
           "content": [
             {
               "type": "p",
-              "text": "Whether you're saving for a vacation, a new gadget, or building an emergency fund, BudgetBear is your reliable companion for turning savings goals into concrete purchase dates. Simple, private, and no subscription required."
+              "text": "Whether you’re saving for a vacation, a new gadget, or building an emergency fund, BudgetBear is your reliable companion for turning savings goals into concrete purchase dates. Simple, private, and no subscription required."
             },
             {
               "type": "p",
-              "text": "The best productivity tools get out of your way and let you focus. That's BudgetBear — no unnecessary features, no overwhelming interfaces, just a clear timeline for your goals."
+              "text": "The best productivity tools get out of your way and let you focus. That’s BudgetBear — no unnecessary features, no overwhelming interfaces, just a clear timeline for your goals."
             }
           ]
         },
@@ -178,14 +178,14 @@
       "title": "Contact – BudgetBear | Your Private Savings Tracker & Goal Planner for iPhone, iPad & Mac",
       "og_title": "Contact — BudgetBear | Your Private Savings Tracker & Goal Planner for iPhone, iPad & Mac",
       "description": "Get in touch with Progressive Bytes for BudgetBear support, feature requests, or bug reports.",
-      "og_description": "Support for BudgetBear – Your Private Savings Tracker & Goal Planner. We'd love to hear from you!",
+      "og_description": "Support for BudgetBear – Your Private Savings Tracker & Goal Planner. We’d love to hear from you!",
       "keywords": "contact, support, feedback, bug report, feature request",
       "blocks": [
         {
           "id": "hero",
           "type": "hero",
           "heading": "Contact",
-          "subtitle": "We're here to help."
+          "subtitle": "We’re here to help."
         },
         {
           "id": "get-in-touch",
@@ -194,7 +194,7 @@
           "content": [
             {
               "type": "p",
-              "text": "Have questions, feedback, or feature requests? Reach out to us and we'll get back to you promptly."
+              "text": "Have questions, feedback, or feature requests? Reach out to us and we’ll get back to you promptly."
             },
             {
               "type": "contact_box"
@@ -253,7 +253,7 @@
           "content": [
             {
               "type": "p",
-              "text": "Progressive Bytes (\"we,\" \"our,\" or \"us\") operates the BudgetBear mobile application and the companion website at {site_link} (collectively, the \"Service\"). This Privacy Policy applies to both the app and the website."
+              "text": "Progressive Bytes (“we,” “our,” or “us”) operates the BudgetBear mobile application and the companion website at {site_link} (collectively, the “Service”). This Privacy Policy applies to both the app and the website."
             },
             {
               "type": "p",
@@ -268,7 +268,7 @@
           "content": [
             {
               "type": "p",
-              "text": "If you are based in the European Economic Area (EEA) or the United Kingdom, our legal basis for \"processing\" your data (which occurs only locally on your device) is **Art. 6(1)(b) GDPR / UK GDPR**: Processing is necessary for the performance of a contract (providing the savings-tracking functionality you requested)."
+              "text": "If you are based in the European Economic Area (EEA) or the United Kingdom, our legal basis for “processing” your data (which occurs only locally on your device) is **Art. 6(1)(b) GDPR / UK GDPR**: Processing is necessary for the performance of a contract (providing the savings-tracking functionality you requested)."
             },
             {
               "type": "p",
@@ -369,12 +369,12 @@
           "content": [
             {
               "type": "p",
-              "text": "BudgetBear does not integrate with any custom third-party tracking, advertising, or analytics SDKs, and does not use iCloud or any other sync service. However, because the app is distributed via Apple's App Store, the following native service applies:"
+              "text": "BudgetBear does not integrate with any custom third-party tracking, advertising, or analytics SDKs, and does not use iCloud or any other sync service. However, because the app is distributed via Apple’s App Store, the following native service applies:"
             },
             {
               "type": "list",
               "items": [
-                "**App Store Telemetry:** Apple may share anonymized, aggregated crash reports and usage statistics with us if you have permitted Apple to share this information with developers in your device's privacy settings. This data cannot be used by us to identify individual users."
+                "**App Store Telemetry:** Apple may share anonymized, aggregated crash reports and usage statistics with us if you have permitted Apple to share this information with developers in your device’s privacy settings. This data cannot be used by us to identify individual users."
               ]
             }
           ]
@@ -382,7 +382,7 @@
         {
           "id": "children",
           "type": "section",
-          "heading": "CHILDREN'S PRIVACY",
+          "heading": "CHILDREN’S PRIVACY",
           "content": [
             {
               "type": "p",
@@ -393,11 +393,11 @@
         {
           "id": "disclaimer",
           "type": "section",
-          "heading": "DISCLAIMER — FINANCIAL INFORMATION PROVIDED \"AS IS\"",
+          "heading": "DISCLAIMER — FINANCIAL INFORMATION PROVIDED “AS IS”",
           "content": [
             {
               "type": "p",
-              "text": "BudgetBear is a personal savings-planning tool provided **\"as is\" and \"as available,\"** without warranties of any kind, express or implied, including as to accuracy, reliability, or fitness for a particular purpose. Any calculations, timelines, or projections shown in the app are estimates for personal organizational purposes only and do not constitute financial, tax, or investment advice."
+              "text": "BudgetBear is a personal savings-planning tool provided **“as is” and “as available,”** without warranties of any kind, express or implied, including as to accuracy, reliability, or fitness for a particular purpose. Any calculations, timelines, or projections shown in the app are estimates for personal organizational purposes only and do not constitute financial, tax, or investment advice."
             },
             {
               "type": "p",
@@ -412,7 +412,7 @@
           "content": [
             {
               "type": "p",
-              "text": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated \"Last Updated\" date. Since the app does not collect contact information, we are unable to notify you directly of changes — we encourage you to review this page periodically."
+              "text": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Last Updated” date. Since the app does not collect contact information, we are unable to notify you directly of changes — we encourage you to review this page periodically."
             }
           ]
         },
@@ -440,7 +440,7 @@
             },
             {
               "type": "p",
-              "text": "You also have the right to lodge a complaint with a Data Protection Authority (such as the Information Commissioner's Office (ICO) in the UK) if you believe your rights have been violated."
+              "text": "You also have the right to lodge a complaint with a Data Protection Authority (such as the Information Commissioner’s Office (ICO) in the UK) if you believe your rights have been violated."
             }
           ]
         }

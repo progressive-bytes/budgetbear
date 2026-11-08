@@ -1,0 +1,450 @@
+{
+  "name": "Türkçe",
+  "tagline": "Gizliliğe önem veren tasarruf takipçin ve hedef planlayıcın",
+  "icon_alt": "BudgetBear simgesi",
+  "nav": {
+    "home": "Ana Sayfa",
+    "privacy": "Gizlilik",
+    "contact": "İletişim"
+  },
+  "copyright": "© 2026 Progressive Bytes. Tüm hakları saklıdır.",
+  "badge_file": "Download_on_the_App_Store_Badge_TR_RGB_blk_100217.svg",
+  "badge_alt": "App Store’dan İndirin",
+  "currency": "TRY",
+  "contact": {
+    "phone_label": "Telefon:",
+    "email_label": "E-posta:",
+    "country": "Almanya"
+  },
+  "pages": {
+    "index": {
+      "title": "BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı — Abonelik yok. İzleyici yok. Özel hesap yok.",
+      "og_title": "BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı",
+      "description": "BudgetBear, iPhone, iPad ve Mac için gizliliğe önem veren bir tasarruf takipçisidir. Hedeflerine öncelik vererek ve para yatırma işlemlerini planlayarak istek listeni bir zaman çizelgesine dönüştür: BudgetBear her satın alımı ne zaman karşılayabileceğini tam olarak hesaplar. Abonelik yok, izleyici yok ve özel hesap yok.",
+      "og_description": "BudgetBear, iPhone, iPad ve Mac için gizliliğe önem veren bir tasarruf takipçisidir. Hedeflerine öncelik vererek ve para yatırma işlemlerini planlayarak istek listeni bir zaman çizelgesine dönüştür: BudgetBear her satın alımı ne zaman karşılayabileceğini tam olarak hesaplar. Abonelik yok, izleyici yok ve özel hesap yok.",
+      "keywords": "tasarruf takibi, birikim fonları, hedef planlayıcı, istek listesi uygulaması, satın alma planlayıcı, bütçe uygulaması, tasarruf hedefleri, finansal planlayıcı, öncelik listesi, çevrimdışı, gizli, iPhone, iPad, Mac",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "Ne Zaman Alabileceğini Tam Olarak Bil",
+          "subtitle": "Tasarruf hedeflerine öncelik ver ve her alımı karşılayabileceğin en erken tarihi öğren. Otomatik satın alma zaman çizelgeleriyle basit, gizli planlama. Hesap gerekmez.",
+          "screenshots": [
+            {
+              "name": "Projects",
+              "alt": "BudgetBear projeleri"
+            },
+            {
+              "name": "ProjectGoals",
+              "alt": "BudgetBear proje hedefleri"
+            }
+          ]
+        },
+        {
+          "id": "intro",
+          "type": "section",
+          "divider": false,
+          "content": [
+            {
+              "type": "p",
+              "text": "**Listendeki bir sonraki şeyi sonunda ne zaman alabileceğini tahmin etmeyi bırak.** BudgetBear, hedeflerini net bir satın alma zaman çizelgesine dönüştüren basit ve gizliliğe önem veren bir uygulamadır. Hedeflerini ekle, önceliklerini belirle ve para yatırma işlemlerini planla — hepsi gizliliğine saygı duyan, sakin ve sade tek bir arayüzde."
+            }
+          ]
+        },
+        {
+          "id": "download",
+          "type": "download",
+          "text": "Satın alımlarını planlamaya başlamaya hazır mısın? BudgetBear’ı bugün indir."
+        },
+        {
+          "id": "why-choose",
+          "type": "section",
+          "heading": "Neden BudgetBear?",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**%100 Gizli ve Kontrol Sende** — Finansal verilerin yalnızca cihazında kalır. Özel hesap yok, üçüncü taraf sunucu yok ve bulut kaydı yok — asla.",
+                "**Minimal ve Odaklı** — İşleri halletmeye odaklanan hızlı ve kullanımı kolay bir arayüz. Gereksiz ayrıntı yok, gereksiz karmaşıklık yok.",
+                "**Ne Zaman Alabileceğini Tam Olarak Bil** — BudgetBear, her hedefi karşılayabileceğin en yakın tarihi hesaplar; böylece artık tahmin yürütmezsin.",
+                "**Önceliklere Göre Tasarlandı** — Önceliklerini planlı ödemelerinle birleştir ve tasarruf planını her hedef için gerçekçi bir satın alma tarihine dönüştür."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase-date",
+          "type": "feature",
+          "heading": "Önceliklerini Satın Alma Tarihine Dönüştür",
+          "intro": "Netlik üzerine kurulu bir sistemle uzun vadeli harcama ve tasarruf hedeflerinin tam kontrolünü eline al.",
+          "screenshot": {
+            "name": "ProjectPayments",
+            "alt": "BudgetBear proje ödemeleri"
+          },
+          "items": [
+            {
+              "title": "Öncelik Tabanlı İstek Listeleri",
+              "text": "Tahmini fiyatlarıyla hedef ürünleri (hedefler) ekle ve tam istediğin tercih sırasına sürükle."
+            },
+            {
+              "title": "Dinamik Zaman Çizelgesi Hesabı",
+              "text": "Fiyatları değiştirdiğinde, para yatırma işlemleri eklediğinde veya hedeflerin sırasını değiştirdiğinde satın alma tarihlerinin anında güncellendiğini gör."
+            },
+            {
+              "title": "Esnek Nakit Akışı",
+              "text": "Bütçeleri tamamlamak için tek seferlik para yatırma işlemleri ekle veya parayı başka bir yere ayırmaya karar verirsen para çekme işlemlerini kaydet."
+            },
+            {
+              "title": "Planlı Ödemeler",
+              "text": "Zaman çizelgeni otomatik tutmak için yinelenen, süreli para yatırma veya çekme planları (örneğin her 2. salı ya da maaş gününde) oluştur."
+            }
+          ]
+        },
+        {
+          "id": "key-features",
+          "type": "section",
+          "heading": "Tasarruf Hedefin İçin Temel Özellikler",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "**Öncelikli Tasarruf Projeleri** — İlgili hedefleri seyahat, elektronik, ev yenileme veya acil durum birikimi gibi özel projelerde grupla.",
+                "**Akıllı Dağıtım** — Para, tam olarak finanse edilene kadar otomatik olarak en yüksek öncelikli hedefe yönlendirilir, ardından sıradakine geçilir.",
+                "**Basit ve Minimalist** — Gereksiz ayrıntı ve karmaşık menüler olmadan hızlı giriş için tasarlanmış temiz, dikkat dağıtmayan bir arayüz.",
+                "**Süreli Yinelenen Planlar** — Karmaşık kurallar olmadan yinelenen katkılar için başlangıç tarihlerini, bitiş tarihlerini ve aralıkları belirle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-cases",
+          "type": "feature",
+          "heading": "Çok Yönlü Tasarruf Kullanım Senaryoları",
+          "intro": "Birikim fonlarından büyük alımlara kadar BudgetBear hedeflerine uyum sağlar.",
+          "reverse": true,
+          "screenshot": {
+            "name": "ProjectDetails",
+            "alt": "BudgetBear proje ayrıntıları, koyu modda: başlık, para birimi, bütçe ve bakiye",
+            "dark": true
+          },
+          "items": [
+            {
+              "title": "Birikim Fonları",
+              "text": "Sigorta faturaları, yılbaşı alışverişi veya araç bakımı gibi önceden bilinen gelecekteki giderler için para ayır."
+            },
+            {
+              "title": "Öncelikli İstek Listeleri",
+              "text": "Sonraki alacaklarını düzenle ve yeni bir para yatırma işleminin satın alma tarihini ne kadar yaklaştırdığını gör."
+            },
+            {
+              "title": "Büyük Alışverişler",
+              "text": "Büyük alımları yönetilebilir yinelenen katkılara böl ve zaman çizelgenin zamanla kısaldığını izle."
+            }
+          ]
+        },
+        {
+          "id": "private-by-design",
+          "type": "trust",
+          "variant": "feature",
+          "heading": "Tasarımdan Gelen Gizlilik",
+          "emphasis": "Abonelik yok. İzleyici yok. Özel hesap yok.",
+          "paragraphs": [
+            "BudgetBear her şeyi yerel olarak tutar — hiçbir şey yüklenmez, senkronize edilmez veya kimseyle paylaşılmaz. Hedeflerin ve bütçe bilgilerin cihazından asla çıkmaz.",
+            "En fazla 3 projeyle ücretsiz başlayabilirsin. Tek seferlik bir Pro yükseltmesi sınırsız projenin kilidini açar — abonelik yok, asla."
+          ]
+        },
+        {
+          "id": "clear-effective",
+          "type": "section",
+          "heading": "Net ve Etkili",
+          "content": [
+            {
+              "type": "p",
+              "text": "İster bir tatil için, ister yeni bir cihaz için biriktir, ister acil durum fonu oluştur; BudgetBear, tasarruf hedeflerini somut satın alma tarihlerine dönüştürmek için güvenilir yol arkadaşındır. Basit, gizli ve abonelik gerektirmez."
+            },
+            {
+              "type": "p",
+              "text": "En iyi üretkenlik araçları yoluna çıkmaz ve odaklanmanı sağlar. BudgetBear de böyledir — gereksiz özellik yok, bunaltıcı arayüz yok, hedeflerin için yalnızca net bir zaman çizelgesi."
+            }
+          ]
+        },
+        {
+          "id": "final-cta",
+          "type": "final_cta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "İletişim – BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı",
+      "og_title": "İletişim — BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı",
+      "description": "BudgetBear desteği, özellik istekleri veya hata bildirimleri için Progressive Bytes ile iletişime geç.",
+      "og_description": "BudgetBear desteği – Gizliliğe önem veren tasarruf takipçin ve hedef planlayıcın. Senden haber almak isteriz!",
+      "keywords": "iletişim, destek, geri bildirim, hata bildirimi, özellik isteği",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "İletişim",
+          "subtitle": "Yardıma hazırız."
+        },
+        {
+          "id": "get-in-touch",
+          "type": "section",
+          "heading": "Bize Ulaş",
+          "content": [
+            {
+              "type": "p",
+              "text": "Sorun, geri bildirimin veya özellik isteğin mi var? Bize ulaş, en kısa sürede dönüş yapalım."
+            },
+            {
+              "type": "contact_box"
+            }
+          ]
+        },
+        {
+          "id": "report-bug",
+          "type": "section",
+          "heading": "Hata Bildir veya Özellik İste",
+          "content": [
+            {
+              "type": "p",
+              "text": "Sana daha iyi yardımcı olabilmemiz için bizimle iletişime geçerken lütfen şunları ekle:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Cihaz modeli",
+                "iOS, iPadOS veya macOS sürümü",
+                "Uygulama sürümü",
+                "Sorunun veya özellik isteğinin açıklaması",
+                "Varsa ekran görüntüleri"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "type": "trust",
+          "variant": "last",
+          "heading": "Geri Bildirimlerine Değer Veriyoruz",
+          "paragraphs": [
+            "İster bir hata bildirimi, ister bir özellik önerisi, isterse kısa bir merhaba olsun, görüşlerin BudgetBear’ı herkes için daha iyi hale getirmeye yardımcı olur."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası – BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı",
+      "og_title": "Gizlilik Politikası — BudgetBear | iPhone, iPad ve Mac için Gizliliğe önem veren tasarruf takibi ve hedef planlayıcı",
+      "description": "BudgetBear Gizlilik Politikası. Verilerini nasıl koruduğumuzu öğren.",
+      "og_description": "Abonelik yok. İzleyici yok. Özel hesap yok — yalnızca senin kontrolündeki verilerin",
+      "keywords": "gizlilik politikası, GDPR, veri koruma",
+      "blocks": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "heading": "Gizlilik Politikası",
+          "subtitle": "Son güncelleme: 1 Kasım 2026"
+        },
+        {
+          "id": "overview",
+          "type": "section",
+          "heading": "GENEL BAKIŞ",
+          "content": [
+            {
+              "type": "p",
+              "text": "Progressive Bytes (“biz”, “bizim” veya “bize”), BudgetBear mobil uygulamasını ve {site_link} adresindeki tamamlayıcı web sitesini (birlikte “Hizmet”) işletir. Bu Gizlilik Politikası hem uygulama hem de web sitesi için geçerlidir."
+            },
+            {
+              "type": "p",
+              "text": "Bu sayfa, Hizmetimizi kullandığında kişisel verilerin toplanması, kullanılması ve açıklanmasıyla ilgili politikalarımız hakkında seni bilgilendirir. **Tasarımdan Gizlilik (Privacy by Design)** ilkesiyle gizliliğini korumayı taahhüt ediyoruz."
+            }
+          ]
+        },
+        {
+          "id": "legal-basis",
+          "type": "section",
+          "heading": "VERİ İŞLEMENİN HUKUKİ DAYANAĞI (GDPR / UK GDPR)",
+          "content": [
+            {
+              "type": "p",
+              "text": "Avrupa Ekonomik Alanı (AEA) veya Birleşik Krallık’ta bulunuyorsan, verilerini “işlememizin” (yalnızca cihazında yerel olarak gerçekleşir) hukuki dayanağı **GDPR / UK GDPR Madde 6(1)(b)**'dir: İşleme, bir sözleşmenin ifası için gereklidir (talep ettiğin tasarruf takibi işlevinin sağlanması)."
+            },
+            {
+              "type": "p",
+              "text": "Web sitesi sunucu günlükleri için hukuki dayanak **GDPR / UK GDPR Madde 6(1)(f)**'dir: İşleyen ve güvenli bir web sitesi işletmeye yönelik meşru menfaatler."
+            }
+          ]
+        },
+        {
+          "id": "app-data",
+          "type": "section",
+          "heading": "UYGULAMA — TOPLADIĞIMIZ BİLGİLER",
+          "content": [
+            {
+              "type": "p",
+              "text": "**Hiçbir kişisel bilgi toplamıyoruz.**"
+            },
+            {
+              "type": "p",
+              "text": "BudgetBear, kişisel veri toplanmasına, bir hesaba veya bir sunucuya gerek duymadan tamamen cihazında çalışacak şekilde tasarlanmıştır. Hiçbir şekilde senkronizasyon yoktur — verilerin cihazından asla çıkmaz. Projelerin, tasarruf hedeflerin, ödeme bilgilerin ve uygulama ayarların yalnızca sana aittir."
+            },
+            {
+              "type": "h3",
+              "text": "Yerel Olarak Saklanan Veriler:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Proje Verileri:** Oluşturduğun tüm projeler, tasarruf hedefleri, ödeme bilgileri ve ilgili veriler cihazında yerel olarak saklanır.",
+                "**Uygulama Ayarları:** Tüm uygulama ayarları cihazında yerel olarak saklanır."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "website-data",
+          "type": "section",
+          "heading": "WEB SİTESİ — TOPLADIĞIMIZ BİLGİLER",
+          "content": [
+            {
+              "type": "p",
+              "text": "Bu web sitesi GitHub Pages üzerinde barındırılır ve birkaç statik HTML sayfası ile stil dosyasından oluşur — hiçbir türde veritabanı, sunucu tarafı kodu veya kullanıcı hesabı yoktur. Çerez, izleyici veya analiz kullanmıyoruz. Ziyaretçilerden hiçbir kişisel bilgi toplamıyoruz."
+            },
+            {
+              "type": "p",
+              "text": "Her web sunucusunda olduğu gibi GitHub Pages, bu siteyi ziyaret ettiğinde temel sunucu günlüklerini otomatik olarak kaydeder. Bu günlükler IP adresini, tarayıcı türünü, yönlendiren sayfayı ve ziyaretinin tarih ve saatini içerebilir. Bu veriler GitHub tarafından [Gizlilik Beyanı](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) uyarınca saklanır. Tek tek ziyaretçi günlüklerine erişimimiz yoktur ve bu verileri izleme veya profil oluşturma amacıyla kullanmıyoruz."
+            }
+          ]
+        },
+        {
+          "id": "sharing",
+          "type": "section",
+          "heading": "VERİ PAYLAŞIMI VE AÇIKLANMASI",
+          "content": [
+            {
+              "type": "p",
+              "text": "**Verilerini paylaşmıyor, satmıyor veya analiz etmiyoruz.**"
+            },
+            {
+              "type": "p",
+              "text": "Tüm uygulama verileri cihazında kaldığı ve kişisel bilgi toplamadığımız için hiçbir veri üçüncü taraflarla, reklamverenlerle veya analiz sağlayıcılarıyla paylaşılmaz."
+            }
+          ]
+        },
+        {
+          "id": "security-retention",
+          "type": "section",
+          "heading": "VERİ GÜVENLİĞİ VE SAKLAMA",
+          "content": [
+            {
+              "type": "p",
+              "text": "Proje verilerin ve uygulama ayarların, standart iOS, iPadOS ve macOS güvenlik önlemleri kullanılarak cihazında güvenli bir şekilde saklanır. Veriler, sen uygulamayı silene veya içeriği elle kaldırana kadar cihazında kalır."
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "type": "section",
+          "heading": "VERİ KORUMA HAKLARIN (GDPR / UK GDPR)",
+          "content": [
+            {
+              "type": "p",
+              "text": "GDPR ve UK GDPR kapsamında erişim, düzeltme ve silme gibi haklara sahipsin. Verilerine erişimimiz olmadığı için bu hakları doğrudan kendin kullanırsın:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Erişim/Taşınabilirlik Hakkı:** Tüm verilerini uygulama içinde görüntüleyebilirsin.",
+                "**Silme Hakkı (Unutulma Hakkı):** Tüm verileri kalıcı olarak silmek için tek tek öğeleri veya uygulamanın tamamını silebilirsin.",
+                "**İtiraz Hakkı:** Uygulamayı kapatarak veya silerek tüm veri işlemeyi durdurabilirsin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "third-parties",
+          "type": "section",
+          "heading": "ÜÇÜNCÜ TARAF HİZMETLERİ",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear, özel olarak eklenmiş hiçbir üçüncü taraf izleme, reklam veya analiz SDK’sıyla entegre değildir; iCloud’u veya başka bir senkronizasyon hizmetini de kullanmaz. Ancak uygulama Apple’ın App Store’u üzerinden dağıtıldığı için aşağıdaki yerleşik hizmet geçerlidir:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**App Store Telemetrisi:** Cihazının gizlilik ayarlarında Apple’ın bu bilgileri geliştiricilerle paylaşmasına izin verdiysen, Apple bizimle anonimleştirilmiş, toplu çökme raporlarını ve kullanım istatistiklerini paylaşabilir. Bu verileri tek tek kullanıcıları belirlemek için kullanamayız."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "type": "section",
+          "heading": "ÇOCUKLARIN GİZLİLİĞİ",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear, 13 yaşın altındaki (veya bölgendeki geçerli dijital rıza yaşının altındaki) çocuklara yönelik değildir. Uygulama, yaşı ne olursa olsun hiç kimseden kişisel bilgi toplamadığı için çocuklara ait hiçbir veri toplanmaz, saklanmaz veya iletilmez."
+            }
+          ]
+        },
+        {
+          "id": "disclaimer",
+          "type": "section",
+          "heading": "SORUMLULUK REDDİ — FİNANSAL BİLGİLER “OLDUĞU GİBİ” SUNULUR",
+          "content": [
+            {
+              "type": "p",
+              "text": "BudgetBear, doğruluk, güvenilirlik veya belirli bir amaca uygunluk dahil olmak üzere açık veya zımni hiçbir garanti olmaksızın **“olduğu gibi” ve “mevcut olduğu şekliyle”** sunulan kişisel bir tasarruf planlama aracıdır. Uygulamada gösterilen hesaplamalar, zaman çizelgeleri veya projeksiyonlar yalnızca kişisel düzenleme amaçlı tahminlerdir ve finansal, vergisel veya yatırım tavsiyesi niteliği taşımaz."
+            },
+            {
+              "type": "p",
+              "text": "Yasaların izin verdiği azami ölçüde Progressive Bytes, uygulamadaki hatalardan, yanlışlıklardan veya eksikliklerden ya da uygulamanın sağladığı bilgilere dayanılarak verilen kararlardan veya yapılan işlemlerden sorumlu tutulamaz."
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "type": "section",
+          "heading": "BU GİZLİLİK POLİTİKASINDAKİ DEĞİŞİKLİKLER",
+          "content": [
+            {
+              "type": "p",
+              "text": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Tüm değişiklikler, güncellenmiş bir “Son güncelleme” tarihiyle bu sayfada yayımlanır. Uygulama iletişim bilgisi toplamadığı için değişiklikleri sana doğrudan bildiremiyoruz — bu sayfayı düzenli olarak gözden geçirmeni öneririz."
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "type": "trust",
+          "heading": "ÖZET",
+          "paragraphs": [
+            "**BudgetBear, gizliliği ön planda tutan bir uygulamadır. Verilerin cihazında ve tamamen senin kontrolünde kalır.**",
+            "Hiçbir kişisel bilgiyi toplamıyor, saklamıyor veya paylaşmıyoruz. Ne uygulamada ne de bu web sitesinde hesap, sunucu veya izleme vardır."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "type": "section",
+          "heading": "İLETİŞİM",
+          "content": [
+            {
+              "type": "p",
+              "text": "Bu Gizlilik Politikası veya verileri nasıl ele aldığımız hakkında sorun varsa lütfen **contact@progressive-bytes.com** adresinden bize ulaş."
+            },
+            {
+              "type": "p",
+              "text": "GDPR ve UK GDPR kapsamında veri sorumlusu Progressive Bytes’tır (Nils Anspach, Emsdettener Str. 10, 48268 Greven, Almanya)."
+            },
+            {
+              "type": "p",
+              "text": "Haklarının ihlal edildiğini düşünüyorsan bir veri koruma otoritesine (örneğin Birleşik Krallık’taki Information Commissioner’s Office (ICO)) şikâyette bulunma hakkına da sahipsin."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
